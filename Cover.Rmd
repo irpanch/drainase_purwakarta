@@ -4,22 +4,23 @@ output: pdf_document
 
 \begin{centering}
 
-\vspace{3 cm}
+\vspace{1 cm}
 
 \Huge
 
 {\bf Perencanaan Drainase \\Kecamatan Purwakarta}
 
-\vspace{1 cm}
+\vspace{3 cm}
 
-![](figure1.png)
 
-\vspace{2 cm}
+\includegraphics{figure1.png}
+
+\vspace{8 cm}
 
 \Large
 CV. Nugraha
 
-\vspace{6 cm}
+\vspace{0.5 cm}
 
 
 \Large

@@ -44,7 +44,7 @@ Personally, I prefer \LaTeX tables over R Markdown tables, because you can tweak
 
 ## Figures
 
-And of course, we can also inlude figures (see figure \ref{figurelabel}).
+And of course, we can also include figures (see figure \ref{figurelabel}).
 
 ![This is a figure caption for this beautiful green creation. \label{figurelabel}](figure1.png)
 
