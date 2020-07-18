@@ -1,0 +1,31 @@
+---
+output: pdf_document
+---
+
+\begin{centering}
+
+\vspace{3 cm}
+
+\Huge
+
+{\bf Perencanaan Drainase \\Kecamatan Purwakarta}
+
+\vspace{1 cm}
+
+![](figure1.png)
+
+\vspace{2 cm}
+
+\Large
+CV. Nugraha
+
+\vspace{6 cm}
+
+
+\Large
+Dinas Tata Ruang dan Pemukiman Purwakarta
+
+Tahun Anggaran 2020
+
+
+\end{centering}
