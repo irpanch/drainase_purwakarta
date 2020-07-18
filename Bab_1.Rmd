@@ -24,6 +24,9 @@ And some text for this subsubsubsection. Let's do another subsection:
 
 Some text... And finally, a subsection that won't be numbered or shown in the table of contents:
 
+## Tambahan Ditulis di VS Code
+coba cek di github atau RStudio. 
+
 \subsection*{Kind of invisible subsection}
 
 This section  won't be displayed in the table of contents. It also won't be numbered. Now let's move on to the methods.
