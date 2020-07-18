@@ -26,6 +26,7 @@ Some text... And finally, a subsection that won't be numbered or shown in the ta
 
 ## Tambahan Ditulis di VS Code
 coba cek di github atau RStudio. 
+Mantap, **semua terkoneksi!**. `VS Code+RSTudio+Github`
 
 \subsection*{Kind of invisible subsection}
 
