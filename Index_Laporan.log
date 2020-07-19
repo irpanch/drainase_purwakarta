@@ -1,24 +1,24 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.7.18)  18 JUL 2020 21:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.7.19)  19 JUL 2020 20:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Index_Laporan.tex
 (./Index_Laporan.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-18> (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf
+L3 programming layer <2020-07-17> (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf
 -dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
@@ -93,13 +93,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count175
+\inf@bad=\count176
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count176
-\leftroot@=\count177
+\uproot@=\count177
+\leftroot@=\count178
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count178
-\DOTSCASE@=\count179
+\classnum@=\count179
+\DOTSCASE@=\count180
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -108,15 +108,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen137
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count180
-\c@MaxMatrixCols=\count181
+\macc@depth=\count181
+\c@MaxMatrixCols=\count182
 \dotsspace@=\muskip16
-\c@parentequation=\count182
-\dspbrk@lvl=\count183
+\c@parentequation=\count183
+\dspbrk@lvl=\count184
 \tag@help=\toks17
-\row@=\count184
-\column@=\count185
-\maxfields@=\count186
+\row@=\count185
+\column@=\count186
+\maxfields@=\count187
 \andhelp@=\toks18
 \eqnshift@=\dimen138
 \alignsep@=\dimen139
@@ -165,11 +165,11 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
 \MT@toks=\toks24
-\MT@count=\count187
+\MT@count=\count188
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen144
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count188
+\MT@listname@count=\count189
 
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtyp
 e-pdftex.def
@@ -268,8 +268,8 @@ s.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen145
-\Hy@linkcounter=\count189
-\Hy@pagecounter=\count190
+\Hy@linkcounter=\count190
+\Hy@pagecounter=\count191
 
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
 f
@@ -285,7 +285,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 s.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count191
+\Hy@SavedSpaceFactor=\count192
 Package hyperref Info: Option `unicode' set `true' on input line 4338.
 
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
@@ -300,7 +300,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count192
+\c@Hy@tempcnt=\count193
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -317,7 +317,7 @@ tcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count193
+\Fld@menulength=\count194
 \Field@Width=\dimen147
 \Fld@charsize=\dimen148
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -334,9 +334,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 i.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count194
-\c@Item=\count195
-\c@Hfootnote=\count196
+\Hy@abspage=\count195
+\c@Item=\count196
+\c@Hfootnote=\count197
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -349,8 +349,8 @@ d.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count197
-\c@bookmark@seq@number=\count198
+\Fld@listcount=\count198
+\c@bookmark@seq@number=\count199
 
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rer
 unfilecheck.sty
@@ -374,9 +374,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count199
-\Gm@cntv=\count266
-\c@Gm@tempcnt=\count267
+\Gm@cnth=\count266
+\Gm@cntv=\count267
+\c@Gm@tempcnt=\count268
 \Gm@bindingoffset=\dimen149
 \Gm@wd@mp=\dimen150
 \Gm@odd@mp=\dimen151
@@ -390,11 +390,11 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.
 sty
 Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count268
+\FV@CodeLineNo=\count269
 \FV@InFile=\read2
 \FV@TabBox=\box47
-\c@FancyVerbLine=\count269
-\FV@StepNumber=\count270
+\c@FancyVerbLine=\count270
+\FV@StepNumber=\count271
 \FV@OutFile=\write3
 ) (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.st
 y
@@ -457,7 +457,7 @@ Package chngcntr Info: \counterwithout already defined.
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count271
+\l__kernel_color_stack_int=\count272
 \l__pdf_internal_box=\box48
 ) (./Index_Laporan.aux)
 \openout1 = `Index_Laporan.aux'.
@@ -523,7 +523,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count272
+\c@section@level=\count273
 )
 LaTeX Info: Redefining \ref on input line 125.
 LaTeX Info: Redefining \pageref on input line 125.
@@ -566,7 +566,7 @@ LaTeX Info: Redefining \nameref on input line 125.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figure1.png, id=75, 144.54pt x 118.19156pt>
+<figure1.png, id=80, 144.54pt x 118.19156pt>
 File: figure1.png Graphic file (type png)
 <use figure1.png>
 Package pdftex.def Info: figure1.png  used on input line 140.
@@ -594,7 +594,7 @@ less on input line 184.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 186.
+less on input line 187.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -605,41 +605,41 @@ This may cause the page layout to be inconsistent, however.
 [1]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 193.
+less on input line 194.
 
 [2]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 201.
+less on input line 202.
 
 (./Index_Laporan.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
 .
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
 .
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-5.
+7.
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-5.
+7.
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 5.
+(Font)              <12> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 5.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+(Font)              <6> on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -647,7 +647,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 fg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -658,103 +658,104 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@toc=\write5
 \openout5 = `Index_Laporan.toc'.
 
-[3]
+[3] [4]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 211.
-
-[1]
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 255.
-
-[2]
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 278.
-
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-91.
-(c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-<figures/unnamed-chunk-11-1.pdf, id=148, 289.08pt x 289.08pt>
-File: figures/unnamed-chunk-11-1.pdf Graphic file (type pdf)
-<use figures/unnamed-chunk-11-1.pdf>
-Package pdftex.def Info: figures/unnamed-chunk-11-1.pdf  used on input line 299
-.
-(pdftex.def)             Requested size: 289.09251pt x 289.09251pt.
-[3 <./figures/unnamed-chunk-11-1.pdf>]
-File: figure1.png Graphic file (type png)
-<use figure1.png>
-Package pdftex.def Info: figure1.png  used on input line 334.
-(pdftex.def)             Requested size: 144.54404pt x 118.19487pt.
-[4]
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 341.
-
-[5]
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 355.
+less on input line 209.
 
 (./Index_Laporan.lof)
 \tf@lof=\write6
 \openout6 = `Index_Laporan.lof'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.359 \newpage
-               [1]
+[5]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 360.
+less on input line 215.
 
 (./Index_Laporan.lot)
 \tf@lot=\write7
 \openout7 = `Index_Laporan.lot'.
 
+[6]
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 224.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+66.
+(c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (17.66026pt too wide) in paragraph at lines 265--267
+\T1/lmr/m/n/12 (-20) coba cek di github atau RStu-dio. Man-tap, \T1/lmr/bx/n/12
+ se-mua terkoneksi!\T1/lmr/m/n/12 (-20) . \T1/lmtt/m/n/12 VS Code+RSTudio+Githu
+b 
+ []
+
+[1]
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 275.
+
+[2]
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 298.
+
+<figures/unnamed-chunk-11-1.pdf, id=176, 289.08pt x 289.08pt>
+File: figures/unnamed-chunk-11-1.pdf Graphic file (type pdf)
+<use figures/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: figures/unnamed-chunk-11-1.pdf  used on input line 319
+.
+(pdftex.def)             Requested size: 289.09251pt x 289.09251pt.
+[3 <./figures/unnamed-chunk-11-1.pdf>]
+File: figure1.png Graphic file (type png)
+<use figure1.png>
+Package pdftex.def Info: figure1.png  used on input line 354.
+(pdftex.def)             Requested size: 144.54404pt x 118.19487pt.
+[4]
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 361.
+
+[5]
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 376.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.402 \newpage
+               [1]
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 403.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.365 \newpage
-               [2]
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 366.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.392 \newpage
-               [3]
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 393.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 422.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
+l.432 \end{document}
+                     [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
 (./Index_Laporan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 422.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
 Package rerunfilecheck Info: File `Index_Laporan.out' has not changed.
-(rerunfilecheck)             Checksum: 305A80259A95337498293874352C0BD2;1907.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 422.
+(rerunfilecheck)             Checksum: 56A126FAFF1DE7860FBD7BAEC43EE195;2197.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 432.
  ) 
 Here is how much of TeX's memory you used:
- 12809 strings out of 482419
- 191635 string characters out of 5946342
- 489257 words of memory out of 5000000
- 28269 multiletter control sequences out of 15000+600000
- 578141 words of font info for 69 fonts, out of 8000000 for 9000
+ 12818 strings out of 482854
+ 191812 string characters out of 5955215
+ 493164 words of memory out of 5000000
+ 27837 multiletter control sequences out of 15000+600000
+ 580891 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,11n,45p,247b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,11n,45p,257b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}{c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.
 enc}{c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ma
@@ -766,10 +767,10 @@ e1/public/lm/lmr12.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts
 onts/type1/public/lm/lmr8.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dis
 t/fonts/type1/public/lm/lmri12.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texm
 f-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Index_Laporan.pdf (14 pages, 256383 bytes).
+Output written on Index_Laporan.pdf (15 pages, 258953 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 8347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 261 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 8355 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -53,6 +53,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 \pagenumbering{roman}
 
 \fancyhead[CO,CE]{Abstract}
+\fancyfoot{}
 \fancyfoot[L]{Perencanaan Drainase Kecamatan Purwakarta}
 \fancyfoot[RO,LE]{\thepage}
 \section*{Abstract}
@@ -78,47 +79,50 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 
 
 \newpage
+\fancyhead[CO,CE]{Daftar Gambar}
+\section*{Daftar Gambar}
+\addcontentsline{toc}{section}{Daftar Gambar}
+\listoffigures
+
+
+\newpage
+\fancyhead[CO,CE]{Daftar Tabel}
+\section*{Daftar Tabel}
+\addcontentsline{toc}{section}{Daftar Tabel}
+\listoftables
+
+\newpage
 \pagenumbering{arabic}
 
 \newpage
-\fancyhead[CO,CE]{Introduction}
+\fancyhead[CO,CE]{Pendahuluan}
 
 ```{r child = 'Bab_1.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{Methods}
+\fancyhead[CO,CE]{Gambaran Umum}
 
 ```{r child = 'Bab_2.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{Results}
+\fancyhead[CO,CE]{Analisa Hidrologi}
 
 ```{r child = 'Bab_3.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{Discussion}
+\fancyhead[CO,CE]{Analisa Hidrolika}
 
 ```{r child = 'Bab_4.Rmd'}
 ```
 
-\FloatBarrier
-
 \newpage
 \pagenumbering{roman}
-\fancyhead[CO,CE]{List of Figures}
-\addcontentsline{toc}{section}{List of Figures}
-\listoffigures
-
-\newpage
-\fancyhead[CO,CE]{List of Tables}
-\addcontentsline{toc}{section}{List of Tables}
-\listoftables
 
 \FloatBarrier
 \newpage
