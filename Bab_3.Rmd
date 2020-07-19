@@ -47,4 +47,18 @@ Personally, I prefer \LaTeX tables over R Markdown tables, because you can tweak
 And of course, we can also include figures (see figure \ref{figurelabel}).
 
 ![This is a figure caption for this beautiful green creation. \label{figurelabel}](figure1.png)
+## Landscape Page
+Coba halaman landscape
+
+Figure \ref{fig:figLand} is on a landscape page.
+
+\begin{landscape}
+
+```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.height=5.2, fig.width=9.5, fig.align="center", fig.cap="petal versus septal width\\label{fig:figLand}"}
+
+  plot(x=iris$Petal.Width, y=iris$Sepal.Width, xlab="petal", ylab="sepal")
+
+```
+
+\end{landscape}
 
