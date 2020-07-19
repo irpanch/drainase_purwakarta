@@ -10,6 +10,7 @@ urlcolor: black
 linkcolor: black
 fontsize: 12pt
 geometry: margin = 1.2in
+papersize: a4paper
 header-includes:
 - \usepackage{placeins}
 - \usepackage{fancyhdr}
@@ -20,6 +21,7 @@ header-includes:
 - \counterwithin{figure}{section}
 - \counterwithin{table}{section}
 - \usepackage{graphicx}
+- \usepackage{pdflscape}
 ---
 
 ---

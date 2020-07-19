@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.7.19)  19 JUL 2020 20:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.7.19)  20 JUL 2020 05:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,7 +365,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip53
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 46.
+Package hyperref Info: Option `colorlinks' set `true' on input line 47.
 
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.
 sty
@@ -452,6 +452,16 @@ Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 )
+(c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscap
+e.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.st
+y
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 \cslhangindent=\skip64
 
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
@@ -459,35 +469,40 @@ d-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count272
 \l__pdf_internal_box=\box48
-) (./Index_Laporan.aux)
+)
+
+LaTeX Warning: Unused global option(s):
+    [a4paperpaper].
+
+(./Index_Laporan.aux)
 \openout1 = `Index_Laporan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Info: Redefining \microtypecontext on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Info: Redefining \microtypecontext on input line 127.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 125.
+LaTeX Info: Redefining \showhyphens on input line 127.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -509,7 +524,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring ON on input line 125.
+Package hyperref Info: Link coloring ON on input line 127.
 
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -525,9 +540,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count273
 )
-LaTeX Info: Redefining \ref on input line 125.
-LaTeX Info: Redefining \pageref on input line 125.
-LaTeX Info: Redefining \nameref on input line 125.
+LaTeX Info: Redefining \ref on input line 127.
+LaTeX Info: Redefining \pageref on input line 127.
+LaTeX Info: Redefining \nameref on input line 127.
 (./Index_Laporan.out) (./Index_Laporan.out)
 \@outlinefile=\write4
 \openout4 = `Index_Laporan.out'.
@@ -569,7 +584,7 @@ LaTeX Info: Redefining \nameref on input line 125.
 <figure1.png, id=80, 144.54pt x 118.19156pt>
 File: figure1.png Graphic file (type png)
 <use figure1.png>
-Package pdftex.def Info: figure1.png  used on input line 140.
+Package pdftex.def Info: figure1.png  used on input line 142.
 (pdftex.def)             Requested size: 144.54404pt x 118.19487pt.
 [1
 
@@ -578,23 +593,23 @@ x.map} <./figure1.png>]pdfTeX warning (ext4): destination with the same identif
 ier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.174 \newpage
+l.176 \newpage
                [2]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 177.
+less on input line 179.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 178.
+less on input line 180.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 184.
+less on input line 186.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 187.
+less on input line 189.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -605,12 +620,12 @@ This may cause the page layout to be inconsistent, however.
 [1]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 194.
+less on input line 196.
 
 [2]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 202.
+less on input line 204.
 
 (./Index_Laporan.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
@@ -661,7 +676,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [3] [4]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 209.
+less on input line 211.
 
 (./Index_Laporan.lof)
 \tf@lof=\write6
@@ -670,7 +685,7 @@ less on input line 209.
 [5]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 215.
+less on input line 217.
 
 (./Index_Laporan.lot)
 \tf@lot=\write7
@@ -679,14 +694,14 @@ less on input line 215.
 [6]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 224.
+less on input line 226.
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-66.
+68.
 (c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (17.66026pt too wide) in paragraph at lines 265--267
+Overfull \hbox (17.66026pt too wide) in paragraph at lines 267--269
 \T1/lmr/m/n/12 (-20) coba cek di github atau RStu-dio. Man-tap, \T1/lmr/bx/n/12
  se-mua terkoneksi!\T1/lmr/m/n/12 (-20) . \T1/lmtt/m/n/12 VS Code+RSTudio+Githu
 b 
@@ -695,67 +710,83 @@ b
 [1]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 275.
+less on input line 277.
 
 [2]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 298.
+less on input line 300.
 
 <figures/unnamed-chunk-11-1.pdf, id=176, 289.08pt x 289.08pt>
 File: figures/unnamed-chunk-11-1.pdf Graphic file (type pdf)
 <use figures/unnamed-chunk-11-1.pdf>
-Package pdftex.def Info: figures/unnamed-chunk-11-1.pdf  used on input line 319
+Package pdftex.def Info: figures/unnamed-chunk-11-1.pdf  used on input line 321
 .
 (pdftex.def)             Requested size: 289.09251pt x 289.09251pt.
 [3 <./figures/unnamed-chunk-11-1.pdf>]
+
+LaTeX Warning: Reference `figurelabel' on page 4 undefined on input line 352.
+
 File: figure1.png Graphic file (type png)
 <use figure1.png>
 Package pdftex.def Info: figure1.png  used on input line 354.
 (pdftex.def)             Requested size: 144.54404pt x 118.19487pt.
 [4]
+<figures/unnamed-chunk-12-1.pdf, id=196, 686.565pt x 375.4025pt>
+File: figures/unnamed-chunk-12-1.pdf Graphic file (type pdf)
+<use figures/unnamed-chunk-12-1.pdf>
+Package pdftex.def Info: figures/unnamed-chunk-12-1.pdf  used on input line 362
+.
+(pdftex.def)             Requested size: 621.51706pt x 339.83534pt.
+[5 <./figures/unnamed-chunk-12-1.pdf>]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 361.
+less on input line 373.
 
-[5]
+[6
+
+
+]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 376.
+less on input line 388.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \newpage
+l.414 \newpage
                [1]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 403.
+less on input line 415.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.432 \end{document}
+l.444 \end{document}
                      [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
 (./Index_Laporan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 444.
 Package rerunfilecheck Info: File `Index_Laporan.out' has not changed.
 (rerunfilecheck)             Checksum: 56A126FAFF1DE7860FBD7BAEC43EE195;2197.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 432.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
  ) 
 Here is how much of TeX's memory you used:
- 12818 strings out of 482854
- 191812 string characters out of 5955215
- 493164 words of memory out of 5000000
- 27837 multiletter control sequences out of 15000+600000
+ 12860 strings out of 482854
+ 192826 string characters out of 5955215
+ 493856 words of memory out of 5000000
+ 27870 multiletter control sequences out of 15000+600000
  580891 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,11n,45p,257b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,11n,45p,257b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}{c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.
 enc}{c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ma
@@ -767,10 +798,10 @@ e1/public/lm/lmr12.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts
 onts/type1/public/lm/lmr8.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dis
 t/fonts/type1/public/lm/lmri12.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texm
 f-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Index_Laporan.pdf (15 pages, 258953 bytes).
+Output written on Index_Laporan.pdf (16 pages, 267994 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 8355 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 8360 words of extra memory for PDF output out of 10000 (max. 10000000)
 
