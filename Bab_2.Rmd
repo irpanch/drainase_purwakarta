@@ -2,7 +2,7 @@
 output: pdf_document
 ---
 
-# Methods
+# Gambaran Umum
 
 In \autoref{label1} we had look at citations and headings. What about some equations? Let's put one here: 
 

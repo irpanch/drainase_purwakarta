@@ -3,7 +3,7 @@ output: pdf_document
 ---
 
 \appendix
-\section{Appendices}
+\section{Lampiran}
 
 \subsection{Appendix stuff}
 
