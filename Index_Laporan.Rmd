@@ -9,7 +9,7 @@ csl: methods-in-ecology-and-evolution.csl
 urlcolor: black
 linkcolor: black
 fontsize: 12pt
-geometry: margin = 1.2in
+geometry: inner=1.7cm,outer=2.7cm,top=2cm,bottom=2cm,bindingoffset=1.2cm
 papersize: a4paper
 header-includes:
 - \usepackage{placeins}
