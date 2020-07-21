@@ -13,7 +13,7 @@ output: pdf_document
 \vspace{3 cm}
 
 
-\includegraphics{figure1.png}
+\includegraphics{gambar/logo-cv-nugraha}
 
 \vspace{8 cm}
 
