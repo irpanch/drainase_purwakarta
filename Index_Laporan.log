@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.7.19)  22 JUL 2020 06:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.7.19)  23 JUL 2020 06:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -582,16 +582,16 @@ LaTeX Info: Redefining \nameref on input line 127.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figure1.png, id=80, 144.54pt x 118.19156pt>
-File: figure1.png Graphic file (type png)
-<use figure1.png>
-Package pdftex.def Info: figure1.png  used on input line 142.
-(pdftex.def)             Requested size: 144.54404pt x 118.19487pt.
+<gambar/logo-cv-nugraha.png, id=80, 70.5837pt x 12.045pt>
+File: gambar/logo-cv-nugraha.png Graphic file (type png)
+<use gambar/logo-cv-nugraha.png>
+Package pdftex.def Info: gambar/logo-cv-nugraha.png  used on input line 142.
+(pdftex.def)             Requested size: 70.5835pt x 12.04495pt.
 [1
 
 {c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
-x.map} <./figure1.png>]pdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
+x.map} <./gambar/logo-cv-nugraha.png>]pdfTeX warning (ext4): destination with t
+he same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.176 \newpage
@@ -718,7 +718,7 @@ less on input line 277.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 300.
 
-<figures/unnamed-chunk-11-1.pdf, id=172, 289.08pt x 289.08pt>
+<figures/unnamed-chunk-11-1.pdf, id=174, 289.08pt x 289.08pt>
 File: figures/unnamed-chunk-11-1.pdf Graphic file (type pdf)
 <use figures/unnamed-chunk-11-1.pdf>
 Package pdftex.def Info: figures/unnamed-chunk-11-1.pdf  used on input line 321
@@ -728,12 +728,13 @@ Package pdftex.def Info: figures/unnamed-chunk-11-1.pdf  used on input line 321
 LaTeX Warning: Reference `figurelabel' on page 3 undefined on input line 352.
 
 [3 <./figures/unnamed-chunk-11-1.pdf>]
+<figure1.png, id=189, 144.54pt x 118.19156pt>
 File: figure1.png Graphic file (type png)
 <use figure1.png>
 Package pdftex.def Info: figure1.png  used on input line 354.
 (pdftex.def)             Requested size: 144.54404pt x 118.19487pt.
-[4]
-<figures/unnamed-chunk-12-1.pdf, id=192, 686.565pt x 375.4025pt>
+[4 <./figure1.png>]
+<figures/unnamed-chunk-12-1.pdf, id=195, 686.565pt x 375.4025pt>
 File: figures/unnamed-chunk-12-1.pdf Graphic file (type pdf)
 <use figures/unnamed-chunk-12-1.pdf>
 Package pdftex.def Info: figures/unnamed-chunk-12-1.pdf  used on input line 362
@@ -781,10 +782,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
  ) 
 Here is how much of TeX's memory you used:
- 12867 strings out of 482854
- 192907 string characters out of 5955215
+ 12876 strings out of 482854
+ 193130 string characters out of 5955215
  493913 words of memory out of 5000000
- 27870 multiletter control sequences out of 15000+600000
+ 27877 multiletter control sequences out of 15000+600000
  581213 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  43i,12n,45p,257b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -799,10 +800,10 @@ e1/public/lm/lmr12.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dist/fonts
 onts/type1/public/lm/lmr8.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texmf-dis
 t/fonts/type1/public/lm/lmri12.pfb><c:/Users/irpan/AppData/Roaming/TinyTeX/texm
 f-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Index_Laporan.pdf (15 pages, 267596 bytes).
+Output written on Index_Laporan.pdf (15 pages, 269292 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+ 270 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
  63 named destinations out of 1000 (max. 500000)
- 8360 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 8365 words of extra memory for PDF output out of 10000 (max. 10000000)
 
