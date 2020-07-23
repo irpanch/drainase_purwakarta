@@ -1,33 +1,83 @@
 ---
 output: pdf_document
+# headers-include:
+# - \usepackage{pdflscape}
+header-includes:
+  \usepackage{amsmath}
+  \usepackage{pdflscape}
 ---
+
+
 
 # Pendahuluan\label{label1}
 
-This is an example introduction. Let's cite someone here [@Author2016]. And in text as well: @Author2013 says that we can cite people in text. Or we can write the name, and than use the citation thingy to print the year: Blabla states something about something [-@Blabla2010]. Or how about multiple citations [@Author2016; @Author2013]. Or we citation with a little of text around it [for example see @Blabla2010, pp. 92-93].
+<!-- Contoh untuk referensi ke daftar pustaka:
+This is an example introduction. Let's cite someone here [@Author2016]. And in text as well: @Author2013 says that we can cite people in text. Or we can write the name, and than use the citation thingy to print the year: Blabla states something about something [-@Blabla2010]. Or how about multiple citations [@Author2016; @Author2013]. Or we citation with a little of text around it [for example see @Blabla2010, pp. 92-93]. -->
 
-We can split up the chapter in subsections:
 
-## Subsection
+## Latar Belakang
 
-For example, this is a subsection of the introduction. We can also make more subsubsections, but they won't be displayed in the table of contents:
+Drainase merupakan infrastuktur yang sangat penting bagi suatu wilayah. Secara umum, drainase didefinisikan sebagai ilmu pengetahuan yang mempelajari usaha untuk mengalirkan air yang berlebihan dalam suatu konteks pemanfaatan tertentu. Sedangkan drainase perkotaan adalah ilmu drainase yang mengkhususkan pegkajian pada kawasan perkotaan yang erat kaitannya dengan kondisi Lingkungan Fisik dan Lingkungan Sosial Budaya yang ada di kawasan kota tersebut.
 
-### Subsubsection
+Suatu sistem drainase yang baik haruslah mampu menampung dan mengalirkan air semaksimal mungkin, sehingga tidak akan terjadi genangan air dan banjir saat hujan turun. Seiring dengan berkembangnya infrastruktur di Kabupaten Purwakarta, yang diiringi pula dengan meningkatnya jumlah penduduk, maka menyebabkan semakin bertambah pula kegiatan dan kebutuhannya. 
+Saat ini salah satu permasalahan yang dihadapi adalah timbulnya genangan saat hujan turun. Hal ini dikarenakan dampak perubahan tata guna lahan yang menyebabkan berkurangnya infiltrasi tanah. Belum lagi kurangnya rasa kedisplinan dan kepedulian masyarakat dalam membuang sampah. Sehingga saluran-saluran drainase yang ada dipenuhi oleh sedimentasi dan juga sampah-sampah, akibatnya saluran tidak dapat bekerja optimal untuk mengalirkan air hujan yang ada. Saat ini begitu banyak saluran drainase yang keadaannya tidak baik dan kurang terawat, serta sudah tidak mampu lagi menampung air hujan, sehingga air meluap dan menyebabkan terjadinya genangan.
 
-There you go, a subsubsection. And just for fun:
+Maka dari itu saluran drainase yang ada harus di evaluasi apakah kapasitasnya mampu menampung debit rencana atau tidak. Oleh karena itu kegiatan Identifikasi Saluran Drainase Perkotaan Kecamatan Perkotaan di Kabupaten Purwakarta diharapkan bisa terlaksana. Sedangkan yang menjadi lokasi kegiatan adalah Kecamatan Purwakarta.
 
-#### Subsubsubsection
+## Maksud dan Tujuan
 
-And some text for this subsubsubsection. Let's do another subsection:
+### Maksud
 
-## Another subsection
+Maksud dari kegiatan Perencanaan dan Pengawasan Drainase di wilayah Kabupaten Purwakarta adalah :
 
-Some text... And finally, a subsection that won't be numbered or shown in the table of contents:
+1. Meningkatkan aksesibilitas dan kapasitas drainase dilokasi ruas jalan yang ditentukan dapat sesuai dengan kondisi saat ini dilapangan. 
+2. Merencanakan drainase yang sesuai dengan kondisi saat ini disetiap ruas jalan yang telah ditentukan.
+3. Lebih melancarkan dan memudahkan hubungan jalan antar daerah maupun aksesnya sehingga kesinambungan rute dapat dipertahankandan ditingkatkan.
+4. Sebagai pedoman pelaksanaan kegiatan pembangunan fisik yang tepat waktu tepat sasaran, dan tepat anggaran.
 
-## Tambahan Ditulis di VS Code
-coba cek di github atau RStudio. 
-Mantap, **semua terkoneksi!**. `VS Code+RSTudio+Github`
+### Tujuan
+Tujuan perencanaan ini yaitu:
 
-\subsection*{Kind of invisible subsection}
+1. Perencanaan adalah jalan atau cara untuk mengantisipasi dan merekam perubahan (a way to anticipate and offset change).
+2. Perencanaan memberikan pengarahan (direction) kepada administrator-administrator maupun non-administrator.
+3. Perencanaan juga dapat menhindari atau setidak-tidaknya memperkecil tumpang-tindih dan pemborosan (wasteful) pelaksanaan aktivitas-aktivitas.
+4. Perencanaan menetapkan tujuan-tujuan dan standar-standar yang akan digunakan untuk memudahkan pengawasan.
 
-This section  won't be displayed in the table of contents. It also won't be numbered. Now let's move on to the methods.
+
+## Lingkup Kegiatan
+Lingkup pekerjaan jasa konsultan yang termasuk ke dalam pekerjaan ini meliputi:
+
+A. Survey lapangan yang meliputi:
+  -Identifikasi kondisi eksisting.
+  -Pengukuran topografi.
+  -Permasalahan yang ada yang berkaitan dengan drainase.
+B. Analisa Data
+  -Pengolahan Data Lapangan
+  -Penyusunan Perencanaan
+  -Evaluasi Perecanaan Teknis
+  -Penyusunan Engineer’s Estimate
+C.	Penyusunan Dokumen Tender
+
+## Lokasi Kegiatan
+
+Lokasi kegiatan berada di Kecamatan Purwakarta. Tepatnya ada di Saluran Drainase Bumi Jaya Indah (BJI), Saluran Drainase Kemuning, dan Saluran Drainase Baranangsiang. Gambar \ref{fig:lokasi_pekerjaan} memperlihatkan lokasi saluran drainase yang dikaji.
+
+\begin{landscape}
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=4.5\textwidth]{gambar/lokasi_pekerjaan_all.png}
+  \caption{Lokasi Pekerjaan Drainase}
+  \label{fig:lokasi_pekerjaan}
+  \end{center}
+\end{figure}
+
+\end{landscape}
+
+
+
+
+<!-- Some text... And finally, a subsection that won't be numbered or shown in the table of contents: -->
+<!-- \subsection*{Kind of invisible subsection} -->
+
+<!-- This section  won't be displayed in the table of contents. It also won't be numbered. Now let's move on to the methods. -->
