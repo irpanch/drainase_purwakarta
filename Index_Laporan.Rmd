@@ -54,10 +54,10 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 
 \pagenumbering{roman}
 
-\fancyhead[CO,CE]{Abstract}
+\fancyhead[CO,CE]{\scriptsize Abstract}
 \fancyfoot{}
-\fancyfoot[L]{Perencanaan Drainase Kecamatan Purwakarta}
-\fancyfoot[RO,LE]{\thepage}
+\fancyfoot[L]{\scriptsize Perencanaan Drainase Kecamatan Purwakarta}
+\fancyfoot[RO,LE]{\scriptsize \thepage}
 \section*{Abstract}
 \addcontentsline{toc}{section}{Abstract}
 
@@ -65,7 +65,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 ```
 
 \newpage
-\fancyhead[CO,CE]{Kata Pengantar}
+\fancyhead[CO,CE]{\scriptsize Kata Pengantar}
 \section*{Kata Pengantar}
 \addcontentsline{toc}{section}{Kata Pengantar}
 
@@ -73,7 +73,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 ```
 
 \newpage
-\fancyhead[CO,CE]{Daftar Isi}
+\fancyhead[CO,CE]{\scriptsize Daftar Isi}
 \setcounter{tocdepth}{2}
 \section*{Daftar Isi}
 \addcontentsline{toc}{section}{Daftar Isi}
@@ -81,14 +81,14 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 
 
 \newpage
-\fancyhead[CO,CE]{Daftar Gambar}
+\fancyhead[CO,CE]{\scriptsize Daftar Gambar}
 \section*{Daftar Gambar}
 \addcontentsline{toc}{section}{Daftar Gambar}
 \listoffigures
 
 
 \newpage
-\fancyhead[CO,CE]{Daftar Tabel}
+\fancyhead[CO,CE]{\scriptsize Daftar Tabel}
 \section*{Daftar Tabel}
 \addcontentsline{toc}{section}{Daftar Tabel}
 \listoftables
@@ -97,28 +97,28 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 \pagenumbering{arabic}
 
 \newpage
-\fancyhead[CO,CE]{Pendahuluan}
+\fancyhead[CO,CE]{\scriptsize Pendahuluan}
 
 ```{r child = 'Bab_1.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{Gambaran Umum}
+\fancyhead[CO,CE]{\scriptsize Gambaran Umum}
 
 ```{r child = 'Bab_2.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{Analisa Hidrologi}
+\fancyhead[CO,CE]{\scriptsize Analisa Hidrologi}
 
 ```{r child = 'Bab_3.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{Analisa Hidrolika}
+\fancyhead[CO,CE]{\scriptsize Analisa Hidrolika}
 
 ```{r child = 'Bab_4.Rmd'}
 ```
@@ -128,13 +128,13 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{Lampiran}
+\fancyhead[CO,CE]{\scriptsize Lampiran}
 
 ```{r child = 'Lampiran.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{References}
+\fancyhead[CO,CE]{\scriptsize References}
 
 # References
