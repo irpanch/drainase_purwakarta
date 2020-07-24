@@ -66,7 +66,7 @@ Lokasi kegiatan berada di Kecamatan Purwakarta. Tepatnya ada di Saluran Drainase
 
 \begin{figure}
   \begin{center}
-  \includegraphics[width=4.5\textwidth]{gambar/lokasi_pekerjaan_all.png}
+  \includegraphics[width=23.5cm,height=20cm]{gambar/lokasi_pekerjaan_all.png}
   \caption{Lokasi Pekerjaan Drainase}
   \label{fig:lokasi_pekerjaan}
   \end{center}
