@@ -53,8 +53,8 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
 4. Oke, halaman sudah landscape, sekarang cara header dan footer nya juga ikut landscape bagaimana?  
    **Belum Selesai**, Pelajari dari jawaban tex.stackexchange [disini](https://tex.stackexchange.com/questions/444913/how-do-i-rotate-a-header-and-footer-in-latex-landscape-page?rq=1).
 
-5. Cara tulisan caption default dari latex? karena defaultnya masih "Figure.." Inginnya jadi "Gambar..".
-   **Belum terjawab**
+5. Cara tulisan caption default dari latex? karena defaultnya masih "Figure.." Inginnya jadi "Gambar..".  
+**Belum terjawab**
    
 6. Sama dengan point 6, rubah tulisan default daftar isi, daftar gambar, dan daftar tabel. Karena defaultnya masih bahasa inggris.  
    **Belum terjawab**  
