@@ -1,56 +1,50 @@
 ---
 output: pdf_document
+header-includes:
+  \usepackage{amsmath}
+  \usepackage{pdflscape}
 ---
 
 # Analisa Hidrologi
 
-## R code output
+## *Catchment Area*
 
-The beauty of R Markdown: including your data analysis directly in the thesis, so that you update as you go.
+Untuk dapat menghitung debit banjir dan debit andalan, diperlukan 2 (dua) inputan data utama. Input yang pertama adalah karakteristik dari catchment area yang ditinjau seperti luasan, panjang saluran, dan kemiringan saluran. Kemudian input kedua yang diperlukan adalah curah hujan rencana.  
+Untuk data karakteristik sub DAS diperoleh dari deliniasi peta rupa bumi Indonesia (RBI) skala 1:25.000 yang bersumber dari Badan Informasi Geospasial dan validasi di lapangan. Hasil deliniasi pada ketiga lokasi yang ditinjau ditampilkan pada gambar \ref{lokasidantabel}. Sedangkan zoom-in dari masing-masing catchment area dapat dilihat pada Gambar \ref{ca_bji} hingga Gambar \ref{ca_baranangsiang}. 
 
-```{r}
-variable_t = 3 * 4
-```
+![Catchment Area Saluran Drainase Yang Ditinjau. \label{lokasidantabel}](gambar\lokasi_pekerjaan_plus_tabel.png)
 
-Variable_t has a value of: `r variable_t`. Note the use of backticks instead of quotations marks. Backticks can also be used to write code-like text: `here is some code` or even do a quick calculation (3 * 6 = : `r 3*6` ).
+<!-- <img src="gambar\lokasi_pekerjaan_plus_tabel.png" width="300" height="150" center> -->
 
-And of course, let's make a plot. You can refer to it in text as normal: see figure \ref{irisgraph}.
+![Catchment BJI. \label{ca_bji}](gambar\ca_bji.png)
 
-```{r fig.cap = "Figure caption. \\label{irisgraph}", fig.height=4, fig.width=4}
-plot(iris)
-```
+![Catchment Kemuning. \label{ca_kemuning}](gambar\ca_kemuning.png)
+
+![Catchment Baranangsiang. \label{ca_baranangsiang}](gambar\ca_baranangsiang.png)
 
 
-## Tables
 
-This is a \LaTeX  table in an R Markdown document:
+## Data Stasiun Hujan
 
-\begin{table}
-\centering
-\caption{This is a table with info}
-\label{table-paramvalues}
-\begin{tabular}{ p{4cm} p{4cm} p{4cm} }
-\hline \\ [-1.5ex]
-colname & colname & colname \\ [1ex]
-\hline \\ [-1.5ex]
-Info & info & info \\ [1ex]
-Info & info & info \\ [1ex]
-Info & info & info \\ [1ex]
-\hline
-\end{tabular}
-\end{table}
+Di sekitar area sub DAS terdapat 1 (satu) stasiun pengamat yang terdekat, yaitu Stasiun Cisomang. Berikut ditampilkan posisi stasiun hujan terhadap sub DAS serta tabel koordinat data hujan yang akan digunakan.
 
-Personally, I prefer \LaTeX tables over R Markdown tables, because you can tweak them a bit more.
+**insert gambar 3-5**
 
-## Figures
+**insert tabel 3-1**
 
-And of course, we can also include figures (see figure \ref{figurelabel}).
+Ketersediaan data untuk Stasiun Cisomang adalah curah hujan harian selama 24 tahun yaitu dari tahun 1995 sampai dengan tahun 2018. Rekapitulasi curah hujan yang akan digunakan ditampilkan pada tabel dan gambar berikut
 
-![This is a figure caption for this beautiful green creation. \label{figurelabel}](figure1.png)
+**insert tabel 3-2**
+
+## Uji Outlier
+
+Sebelum data hujan dipakai dalam analisa maka diperlukan pemeriksaan terlebih dahulu untuk memastikan bahwa data yang tercatat adalah benar secara statistik. Salah satu metode pemeriksaan yang umum digunakan adalah uji outlier. Pada pemeriksaan adanya outlier, seri data hujan harian maksimum tahunan, baik outlier atas maupun outlier bawah dilakukan dengan metoda yang dikembangkan oleh Water Resource Council (1981). Bila terdapat outlier, maka data outlier harus dipertimbangkan secara teknis sebelum seri data digunakan untuk analisis hidrologi lebih lanjut.
+Persamaan frekuensi untuk mendeteksi adanya outlier atas adalah :
+
+**insert rumus**
+
 ## Landscape Page
 Coba halaman landscape
-
-Figure \ref{fig:figLand} is on a landscape page.
 
 \begin{landscape}
 
