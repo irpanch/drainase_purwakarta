@@ -4,13 +4,47 @@ output: pdf_document
 
 # Gambaran Umum
 
-In \autoref{label1} we had look at citations and headings. What about some equations? Let's put one here: 
+## Batas Administrasi
 
-\begin{equation}
-\label{eq-abc}
-a + b = c
-\end{equation}
+Ketiga lokasi saluran drainase yang akan ditinjau berada di Kecamatan Purwakarta. Sedangkan dilihat dari batas administrasi desa, untuk saluran Bumi Jaya Indah (BJI) berada di Desa Citalang dan Desa Nagrikidul, untuk saluran Kemuning berada di antara perbatasan Desa Tegalmunjul, Desa Nagrikaler, dan Desa Munjuljaya, sedangkan untuk saluran Baranangsiang berada di perbatasan antara Desa Sindangkasih dan Nagrikidul. Overlay lokasi saluran drainase yang ditinjau terhadap batas administrasi desa di Kecamatan Purwakarta ditampilkan pada Gambar \ref{overlay_administrasi}.
 
-You can also write it inline: $a + b = c$ or use the $-signs to refer to a symbol, for example: $a$ is distance (m).
+![Overlay Batas Administrasi dan Saluran Drainase Yang Ditinjau \label{overlay_administrasi}](gambar\batas_administrasi.png)
 
-To refer to the equation in text, you can write: see equation \ref{eq-abc}. If you use the autoref command, it will automatically specify what kind of LaTeX object you are referring to, for example: see \autoref{eq-abc}.
+## Geografi dan Kependudukan
+
+Berdasarkan dari data “Kecamatan Purwakarta Dalam Angka, 2019”, lokasi-lokasi desa yang masuk dalam wilayah tinjuan merupakan desa dengan tipologi yang datar, kemiringan antara 0 – 500 m, dan memiliki luasan 3.39 Km<sup>2</sup> untuk Desa Citalang, 3.84 Km<sup>2</sup> untuk Desa Munjuljaya, 2.79 Km<sup>2</sup> untuk Desa Tegalmunjul, 1.73 Km<sup>2</sup> untuk Desa Nagrikaler, 1.52 Km<sup>2</sup> untuk Desa Sindangkasih, dan 2.23 Km<sup>2</sup> untuk Desa Nagrikidul. Dari sisi kependudukan, desa-desa yang berada dalam wilayah tinjauan dapat dilihat dari Tabel berikut.
+
+```
+insert table dari RMarkdown
+```
+
+## Kondisi Saluran Drainase
+
+### Saluran Drainase Bumi Jaya Indah (BJI)
+Secara umum kondisi saluran drainase adalah saluran dengan dasar tanah dengan perkuatan pasangan batu di beberapa ruas sungai. Lebar rata-rata saluran berkisar antara 3 hingga 5 meter dan tinggi saluran 1.5 hingga 4 meter. 
+
+![Kondisi Saluran Di Sekitar Jembatan Jalan Citalang, Komplek Perumahan BJI \label{kondisi_bji_1}](gambar\kondisi_bji_1.png)
+
+![Kondisi Saluran BJI, ± 50 Meter ke arah hilir dari Gambar 2-1 \label{kondisi_bji_2}](gambar\kondisi_bji_2.png)
+
+![Kondisi Saluran BJI di Hilir, Longsoran Tebing. \label{kondisi_bji_3}](gambar\kondisi_bji_3.png)
+
+### Saluran Drainase Kemuning
+
+Tidak berbeda jauh dengan Saluran Drainase BJI, Saluran Drainase Kemuning juga didominasi oleh saluran dasar tanah dan tanggul dengan pasangan batu kali. Secara rata-rata lebar saluran adalah 1.5 hingga 2 meter dengan ketinggian saluran berkisar 1 sampai 2 meter. Di Saluran Kemuning ini terdapat saluran tertutup kurang lebih 65 meter ke arah timur dari Jalan Raya Kemuning **(Gambar \ref{kondisi_kemuning_2}**).
+
+![Kondisi Saluran Drainase Kemuning, Titik 0 Pengukuran. \label{kondisi_kemuning_1}](gambar\kondisi_kemuning_1.png)
+
+![Kondisi Saluran Tertutup Drainase Kemuning. \label{kondisi_kemuning_2}](gambar\kondisi_kemuning_2.png)
+
+![Kondisi Saluran Drainase Kemuning. Tanggul Kanan Yang Dibangun Oleh Swadaya Masyarakat. \label{kondisi_kemuning_3}](gambar\kondisi_kemuning_3.png)
+
+### Saluran Drainase Baranangsiang
+
+Lokasi saluran ini berada diantara pemukiman penduduk yang cukup padat. Lebar saluran rata-rata 1 – 1.5 meter di hulu dan melebar 2 – 4 meter di hilirnya. Sedangkan tinggi saluran berkisar 1.5 – 3 meter. Pada segmen tertentu banyak laporan dari masyarakata tentang sering terjadinya luapan air dari saluran setinggi ±40 cm **(Gambar \ref{kondisi_brgsg_2}).**
+
+![Kondisi Saluran Drainase Baranangsiang, Sekitar Titik 0 Pengukuran.\label{kondisi_brgsg_1}](gambar\kondisi_brgsg_1.png)
+
+![Kondisi Saluran Drainase Baranangsiang, Estimasi Tinggi Banjir dari Masyarakat.\label{kondisi_brgsg_2}](gambar\kondisi_brgsg_2.png)
+
+![Kondisi Saluran Drainase Baranangsiang, Di bawah Jembatan Perlintasan Kereta Api.\label{kondisi_brgsg_3}](gambar\kondisi_brgsg_3.png)
