@@ -62,3 +62,6 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
 7. Ingin buat folder baru yang terhubung dengan github? folder eksisting sudah ada.  
    Caranya tidak sesimple buat folder baru di eksplorer atau RStudio, lalu pindahkan file, lalu push ke github. Karena dengan cara tersebut akan **error** (sudah coba 3x).  
    Yang benar adalah kita buat folder baru dulu di github, caranya bisa dilihat [disini](https://stackoverflow.com/questions/12258399/how-do-i-create-a-folder-in-a-github-repository) (harus ada filenya, kasih aja file keterangan). Lalu di RStudio baru kita **pull**. Baru kemudian bisa kita pindahkan file (cut) dan masukkan ke folder baru yang barusan di buat di github. Baru kita **push** kembali ke github. Dan bisa terkoneksi.
+   
+8. Antara bab 2 dan bab 3 kenapa tidak ada jarak halaman? padahal sudah coba pakai `\new page`, `\pagebreak`, `Floatbarrier`, baik di index maupun di akhir bab 2 dan awal bab 3 . Tetap tidak berhasil. Hadeuh.  
+   **Belum terjawab**  
