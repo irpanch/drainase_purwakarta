@@ -53,8 +53,12 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
 4. Oke, halaman sudah landscape, sekarang cara header dan footer nya juga ikut landscape bagaimana?  
    **Belum Selesai**, Pelajari dari jawaban tex.stackexchange [disini](https://tex.stackexchange.com/questions/444913/how-do-i-rotate-a-header-and-footer-in-latex-landscape-page?rq=1).
 
-5. Cara tulisan caption default dari latex? karena defaultnya masih "Figure.." Inginnya jadi "Gambar..".  
+5. Cara tulisan caption default dari latex? karena defaultnya masih "Figure.." Inginnya jadi "Gambar.." atau "Tabel..".  
 **Belum terjawab**
    
-6. Sama dengan point 6, rubah tulisan default daftar isi, daftar gambar, dan daftar tabel. Karena defaultnya masih bahasa inggris.  
+6. Sama dengan point 6, rubah tulisan default daftar isi, daftar gambar, dan daftar tabel. Karena defaultnya masih bahasa inggris. Kalau dipaksakan nantinya jadi ada double tulisan. Diatasnya "Content", dibawahnya "Daftar Isi"..  
    **Belum terjawab**  
+
+7. Ingin buat folder baru yang terhubung dengan github? folder eksisting sudah ada.  
+   Caranya tidak sesimple buat folder baru di eksplorer atau RStudio, lalu pindahkan file, lalu push ke github. Karena dengan cara tersebut akan **error** (sudah coba 3x).  
+   Yang benar adalah kita buat folder baru dulu di github, caranya bisa dilihat [disini](https://stackoverflow.com/questions/12258399/how-do-i-create-a-folder-in-a-github-repository) (harus ada filenya, kasih aja file keterangan). Lalu di RStudio baru kita **pull**. Baru kemudian bisa kita pindahkan file (cut) dan masukkan ke folder baru yang barusan di buat di github. Baru kita **push** kembali ke github. Dan bisa terkoneksi.
