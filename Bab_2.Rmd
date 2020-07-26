@@ -2,6 +2,11 @@
 output: pdf_document
 ---
 
+```{r, include=FALSE, echo=FALSE}
+  library(ggplot2)
+  library(kableExtra)
+```
+
 # Gambaran Umum
 
 ## Batas Administrasi
@@ -12,10 +17,15 @@ Ketiga lokasi saluran drainase yang akan ditinjau berada di Kecamatan Purwakarta
 
 ## Geografi dan Kependudukan
 
-Berdasarkan dari data “Kecamatan Purwakarta Dalam Angka, 2019”, lokasi-lokasi desa yang masuk dalam wilayah tinjuan merupakan desa dengan tipologi yang datar, kemiringan antara 0 – 500 m, dan memiliki luasan 3.39 Km<sup>2</sup> untuk Desa Citalang, 3.84 Km<sup>2</sup> untuk Desa Munjuljaya, 2.79 Km<sup>2</sup> untuk Desa Tegalmunjul, 1.73 Km<sup>2</sup> untuk Desa Nagrikaler, 1.52 Km<sup>2</sup> untuk Desa Sindangkasih, dan 2.23 Km<sup>2</sup> untuk Desa Nagrikidul. Dari sisi kependudukan, desa-desa yang berada dalam wilayah tinjauan dapat dilihat dari Tabel berikut.
+Berdasarkan dari data “Kecamatan Purwakarta Dalam Angka, 2019”, lokasi-lokasi desa yang masuk dalam wilayah tinjuan merupakan desa dengan tipologi yang datar, kemiringan antara 0 – 500 m, dan memiliki luasan 3.39 Km<sup>2</sup> untuk Desa Citalang, 3.84 Km<sup>2</sup> untuk Desa Munjuljaya, 2.79 Km<sup>2</sup> untuk Desa Tegalmunjul, 1.73 Km<sup>2</sup> untuk Desa Nagrikaler, 1.52 Km<sup>2</sup> untuk Desa Sindangkasih, dan 2.23 Km<sup>2</sup> untuk Desa Nagrikidul. Dari sisi kependudukan, desa-desa yang berada dalam wilayah tinjauan dapat dilihat dari Tabel \ref{tbl_bps}.
 
-```
-insert table dari RMarkdown
+```{r, include=TRUE, echo=FALSE, message=FALSE}
+library(readxl)
+Tabel_BPS_Kecamatan_Purwakarta <- read_excel("data_and_code/Tabel BPS Kecamatan Purwakarta.xlsx", 
+   na="character()")
+
+kable(Tabel_BPS_Kecamatan_Purwakarta, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Jumlah Penduduk Menurut Jenis Kelamin dan Sex Ratio di Desa-desa Yang Berada dalam Wilayah Tinjauan.\\label{tbl_bps}") %>%
+    kable_styling(latex_options=c("HOLD_position"))
 ```
 
 ## Kondisi Saluran Drainase
@@ -42,6 +52,7 @@ Tidak berbeda jauh dengan Saluran Drainase BJI, Saluran Drainase Kemuning juga d
 ### Saluran Drainase Baranangsiang
 
 Lokasi saluran ini berada diantara pemukiman penduduk yang cukup padat. Lebar saluran rata-rata 1 – 1.5 meter di hulu dan melebar 2 – 4 meter di hilirnya. Sedangkan tinggi saluran berkisar 1.5 – 3 meter. Pada segmen tertentu banyak laporan dari masyarakata tentang sering terjadinya luapan air dari saluran setinggi ±40 cm **(Gambar \ref{kondisi_brgsg_2}).**
+
 
 ![Kondisi Saluran Drainase Baranangsiang, Sekitar Titik 0 Pengukuran.\label{kondisi_brgsg_1}](gambar\kondisi_brgsg_1.png)
 
