@@ -64,4 +64,4 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
    Yang benar adalah kita buat folder baru dulu di github, caranya bisa dilihat [disini](https://stackoverflow.com/questions/12258399/how-do-i-create-a-folder-in-a-github-repository) (harus ada filenya, kasih aja file keterangan). Lalu di RStudio baru kita **pull**. Baru kemudian bisa kita pindahkan file (cut) dan masukkan ke folder baru yang barusan di buat di github. Baru kita **push** kembali ke github. Dan bisa terkoneksi.
    
 8. Antara bab 2 dan bab 3 kenapa tidak ada jarak halaman? padahal sudah coba pakai `\new page`, `\pagebreak`, `Floatbarrier`, baik di index maupun di akhir bab 2 dan awal bab 3 . Tetap tidak berhasil. Hadeuh.  
-   **Belum terjawab**  
+   **Terjawab**. Jadi dibawah bab 2, paling akhir, harus ada text lagi. Jangan langsung jawaban. Baru nanti bisa misah
