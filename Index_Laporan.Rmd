@@ -30,7 +30,7 @@ nocite: |
 ...
 
 ```{r global_options, include=FALSE}
-knitr::opts_chunk$set(fig.path = 'gambar/',fig.align = 'center',fig.cap = 'Gambar',
+knitr::opts_chunk$set(fig.path = 'gambar/',fig.align = 'center',
                       echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
@@ -43,6 +43,7 @@ knitr::opts_chunk$set(fig.path = 'gambar/',fig.align = 'center',fig.cap = 'Gamba
 
 ```{r child = 'Pernyataan.Rmd'}
 ```
+
 
 \newpage
 \pagestyle{fancy}
@@ -79,6 +80,9 @@ knitr::opts_chunk$set(fig.path = 'gambar/',fig.align = 'center',fig.cap = 'Gamba
 \addcontentsline{toc}{section}{Daftar Isi}
 \tableofcontents
 
+
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\figurename}{Gambar}
 
 \newpage
 \fancyhead[CO,CE]{\scriptsize Daftar Gambar}
