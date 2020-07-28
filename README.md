@@ -2,6 +2,10 @@
 
 Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdown dan bahasa latex. Didasari oleh blog yang dibuat Rosanna Van Hespen [disini](https://www.rosannavanhespen.nl/thesis_in_rmarkdown/) dan Dr. Alison Hale [disini](https://achale.gitlab.io/tutorialmarkdownthesis/).
 
+## Perlu dipelajari.
+1. Package caption dari LaTeX.  
+   Untuk bisa mengatur spasi, posisi, ukuran huruf, dan sebagainya. Saat ini (28 Juli 2020), posisi caption masih acak-acakan. Belum Center, tulisan terlalu besar. Tulisan caption yang bagus ada [disini](http://www.peteryu.ca/tutorials/publishing/latex_captions). 
+
 ## Kendala dan Solusi
 1. Tidak bisa insert gambar di cover?  
    Gunakan package dari latex. Di YAML tambahkan:  
