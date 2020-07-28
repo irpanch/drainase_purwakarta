@@ -11,7 +11,7 @@ header-includes:
 ## *Catchment Area*
 
 Untuk dapat menghitung debit banjir dan debit andalan, diperlukan 2 (dua) inputan data utama. Input yang pertama adalah karakteristik dari catchment area yang ditinjau seperti luasan, panjang saluran, dan kemiringan saluran. Kemudian input kedua yang diperlukan adalah curah hujan rencana.  
-Untuk data karakteristik sub DAS diperoleh dari deliniasi peta rupa bumi Indonesia (RBI) skala 1:25.000 yang bersumber dari Badan Informasi Geospasial dan validasi di lapangan. Hasil deliniasi pada ketiga lokasi yang ditinjau ditampilkan pada gambar \ref{lokasidantabel}. Sedangkan zoom-in dari masing-masing catchment area dapat dilihat pada Gambar \ref{ca_bji} hingga Gambar \ref{ca_baranangsiang}. 
+Untuk data karakteristik sub DAS diperoleh dari deliniasi peta rupa bumi Indonesia (RBI) skala 1:25.000 yang bersumber dari Badan Informasi Geospasial dan validasi di lapangan. Hasil deliniasi pada ketiga lokasi yang ditinjau ditampilkan pada Gambar \ref{lokasidantabel}. Sedangkan zoom-in dari masing-masing catchment area dapat dilihat pada Gambar \ref{ca_bji} hingga Gambar \ref{ca_baranangsiang}. 
 
 ![Catchment Area Saluran Drainase Yang Ditinjau. \label{lokasidantabel}](gambar\lokasi_pekerjaan_plus_tabel.png)
 
@@ -29,11 +29,23 @@ Untuk data karakteristik sub DAS diperoleh dari deliniasi peta rupa bumi Indones
 
 Di sekitar area sub DAS terdapat 1 (satu) stasiun pengamat yang terdekat, yaitu Stasiun Cisomang. Berikut ditampilkan posisi stasiun hujan terhadap sub DAS serta tabel koordinat data hujan yang akan digunakan.
 
-**insert gambar 3-5**
+![*Overlay* Lokasi Pos Hujan Terhadap *Catchment Area*. \label{peta_pos_hujan}](gambar\peta_pos_hujan.png)
 
-**insert tabel 3-1**
+```{r, include=TRUE, echo=FALSE, message=FALSE}
+library(readxl)
+library(dplyr)
+library(kableExtra)
+
+Koordinat_Pos_Hujan <- read_excel("data_and_code/Koordinat_Pos_Hujan.xlsx", 
+    col_types = c("numeric", "text", "text", 
+        "text", "text", "skip", "skip"))
+
+kable(Koordinat_Pos_Hujan, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Koordinat Pos Hujan.\\label{tbl_pos_hujan}") %>%
+    kable_styling(latex_options=c("HOLD_position"))
+```
 
 Ketersediaan data untuk Stasiun Cisomang adalah curah hujan harian selama 24 tahun yaitu dari tahun 1995 sampai dengan tahun 2018. Rekapitulasi curah hujan yang akan digunakan ditampilkan pada tabel dan gambar berikut
+
 
 **insert tabel 3-2**
 

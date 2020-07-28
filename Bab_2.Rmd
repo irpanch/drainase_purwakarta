@@ -22,8 +22,8 @@ Berdasarkan dari data “Kecamatan Purwakarta Dalam Angka, 2019”, lokasi-lokas
 
 ```{r, include=TRUE, echo=FALSE, message=FALSE}
 library(readxl)
-Tabel_BPS_Kecamatan_Purwakarta <- read_excel("data_and_code/Tabel BPS Kecamatan Purwakarta.xlsx", 
-   na="character()")
+library(dplyr)
+Tabel_BPS_Kecamatan_Purwakarta <- read_excel("data_and_code/Tabel BPS Kecamatan Purwakarta.xlsx",na="0" )
 
 kable(Tabel_BPS_Kecamatan_Purwakarta, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Jumlah Penduduk Menurut Jenis Kelamin dan Sex Ratio di Desa-desa Yang Berada dalam Wilayah Tinjauan.\\label{tbl_bps}") %>%
     kable_styling(latex_options=c("HOLD_position"))
@@ -62,5 +62,5 @@ Lokasi saluran ini berada diantara pemukiman penduduk yang cukup padat. Lebar sa
 ![Kondisi Saluran Drainase Baranangsiang, Di bawah Jembatan Perlintasan Kereta Api.\label{kondisi_brgsg_3}](gambar\kondisi_brgsg_3.png)
 
 
-**Test Text. Apakah halaman akan terpisah? Terpisah tapi harus ada spasi diantara gambar dan text. Coba lagi. Sip, betul sudah bisa.  
+**Test Text. Apakah halaman akan terpisah? Terpisah tapi harus ada tulisan diantara gambar dan text. Coba lagi. Sip, betul sudah bisa.  
 Kalau pake comment juga tidak bisa. Harus pakai text asli. Baru bisa misah.**
