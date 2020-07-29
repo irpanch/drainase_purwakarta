@@ -68,7 +68,10 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
    Untuk setting tentang caption dan subcaption lengkap bisa dilihat pada  situs [ini](http://www.peteryu.ca/tutorials/publishing/latex_captions).
 
 6. Sama dengan point 6, rubah tulisan default daftar isi, daftar gambar, dan daftar tabel. Karena defaultnya masih bahasa inggris. Kalau dipaksakan nantinya jadi ada double tulisan. Diatasnya "Content", dibawahnya "Daftar Isi"..  
-   **Belum terjawab**  
+   **Terjawab**
+   Hilangkan kode `\section*{Daftar Isi}` supaya tidak double dab tambahkan kode `\renewcommand{\contentsname}{Daftar Isi}`. Ini untuk daftar isi.
+   Untuk daftar gambar hampir sama, Hilangkan kode `\section*{Daftar Gambar}` supaya tidak double dab tambahkan kode `\renewcommand{\listfigurename}{Daftar Gambar}`.
+   Untuk daftar tabel juga sama, beda pada renewcommand nya aja jadi `..{\listtablenam}` 
 
 7. Ingin buat folder baru yang terhubung dengan github? folder eksisting sudah ada.  
    **Terjawab**.  
