@@ -76,8 +76,8 @@ knitr::opts_chunk$set(fig.path = 'gambar/',fig.align = 'center',
 \newpage
 \fancyhead[CO,CE]{\scriptsize Daftar Isi}
 \setcounter{tocdepth}{2}
-\section*{Daftar Isi}
 \addcontentsline{toc}{section}{Daftar Isi}
+\renewcommand{\contentsname}{Daftar Isi}
 \tableofcontents
 
 
@@ -86,15 +86,15 @@ knitr::opts_chunk$set(fig.path = 'gambar/',fig.align = 'center',
 
 \newpage
 \fancyhead[CO,CE]{\scriptsize Daftar Gambar}
-\section*{Daftar Gambar}
 \addcontentsline{toc}{section}{Daftar Gambar}
+\renewcommand{\listfigurename}{Daftar Gambar}
 \listoffigures
 
 
 \newpage
 \fancyhead[CO,CE]{\scriptsize Daftar Tabel}
-\section*{Daftar Tabel}
 \addcontentsline{toc}{section}{Daftar Tabel}
+\renewcommand{\listtablename}{Daftar Tabel}
 \listoftables
 
 \newpage
