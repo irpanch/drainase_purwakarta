@@ -47,18 +47,21 @@ Tujuan perencanaan ini yaitu:
 ## Lingkup Kegiatan
 Lingkup pekerjaan jasa konsultan yang termasuk ke dalam pekerjaan ini meliputi:
 
-A. Survey lapangan yang meliputi:  
-* Identifikasi kondisi eksisting.
-* Pengukuran topografi.
-* Permasalahan yang ada yang berkaitan dengan drainase.
+A. Survey lapangan yang meliputi:
+
+- Identifikasi kondisi eksisting.  
+- Pengukuran topografi.  
+- Permasalahan yang ada yang berkaitan dengan drainase.
 
 B. Analisa Data
-* Pengolahan Data Lapangan
-* Penyusunan Perencanaan
-* Evaluasi Perecanaan Teknis
-* Penyusunan Engineer’s Estimate
+
+- Pengolahan Data Lapangan  
+- Penyusunan Perencanaan  
+- Evaluasi Perecanaan Teknis  
+- Penyusunan Engineer’s Estimate
   
-C.	Penyusunan Dokumen Tender
+
+C. Penyusunan Dokumen Tender
 
 ## Lokasi Kegiatan
 
