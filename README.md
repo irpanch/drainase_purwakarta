@@ -68,10 +68,10 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
    Untuk setting tentang caption dan subcaption lengkap bisa dilihat pada  situs [ini](http://www.peteryu.ca/tutorials/publishing/latex_captions).
 
 6. Sama dengan point 6, rubah tulisan default daftar isi, daftar gambar, dan daftar tabel. Karena defaultnya masih bahasa inggris. Kalau dipaksakan nantinya jadi ada double tulisan. Diatasnya "Content", dibawahnya "Daftar Isi"..  
-   **Terjawab**
-   Hilangkan kode `\section*{Daftar Isi}` supaya tidak double dab tambahkan kode `\renewcommand{\contentsname}{Daftar Isi}`. Ini untuk daftar isi.
-   Untuk daftar gambar hampir sama, Hilangkan kode `\section*{Daftar Gambar}` supaya tidak double dab tambahkan kode `\renewcommand{\listfigurename}{Daftar Gambar}`.
-   Untuk daftar tabel juga sama, beda pada renewcommand nya aja jadi `..{\listtablenam}` 
+   **Terjawab**  
+   Hilangkan kode `\section*{Daftar Isi}` supaya tidak double dab tambahkan kode `\renewcommand{\contentsname}{Daftar Isi}`. Ini untuk daftar isi.  
+   Untuk daftar gambar hampir sama, Hilangkan kode `\section*{Daftar Gambar}` supaya tidak double dab tambahkan kode `\renewcommand{\listfigurename}{Daftar Gambar}`.  
+   Untuk daftar tabel juga sama, beda pada renewcommand nya aja jadi `..{\listtablename}..` 
 
 7. Ingin buat folder baru yang terhubung dengan github? folder eksisting sudah ada.  
    **Terjawab**.  
@@ -81,3 +81,6 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
 8. Antara bab 2 dan bab 3 kenapa tidak ada jarak halaman? padahal sudah coba pakai `\new page`, `\pagebreak`, `Floatbarrier`, baik di index maupun di akhir bab 2 dan awal bab 3 . Tetap tidak berhasil. Hadeuh.  
    **Terjawab**.  
    Jadi dibawah bab 2, paling akhir, harus ada text lagi. Jangan langsung jawaban. Baru nanti bisa misah
+
+9. Cara insert number section di daftar isi? karena sekarang (30 Juli 2020) di daftar isi, tabel, maupun gambar, nomor halamannya masih belum memasukkan nomor bab.  
+    jadi masih `Latar Belakang...1`. Inginnya `Latar Belakang...1-1`. dan seterusnya. 
