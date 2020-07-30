@@ -11,5 +11,6 @@ Bab_3.log
 Bab_3.tex
 Index_Laporan.log
 Cover.pdf
-.pdf
-.log
+*.pdf
+*.log
+*.tex
