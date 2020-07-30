@@ -14,3 +14,8 @@ Cover.pdf
 *.pdf
 *.log
 *.tex
+*.aux
+*.out
+*.toc
+Index_Laporan.log
+Index_Laporan.pdf
