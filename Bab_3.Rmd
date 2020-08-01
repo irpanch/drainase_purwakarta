@@ -44,7 +44,42 @@ kable(Koordinat_Pos_Hujan, "latex", escape=FALSE, booktabs=TRUE, linesep="", cap
     kable_styling(latex_options=c("HOLD_position"))
 ```
 
-Ketersediaan data untuk Stasiun Cisomang adalah curah hujan harian selama 24 tahun yaitu dari tahun 1995 sampai dengan tahun 2018. Rekapitulasi curah hujan yang akan digunakan ditampilkan pada tabel dan gambar berikut
+Ketersediaan data untuk Stasiun Cisomang adalah curah hujan harian selama 24 tahun yaitu dari tahun 1995 sampai dengan tahun 2018. Rekapitulasi curah hujan yang akan digunakan ditampilkan pada tabel dan Gambar \ref{data-hujan}.
+
+```{r data-hujan, fig.cap="Data Stasiun Hujan \\label{data-hujan}",echo=FALSE}
+library(ggplot2)
+
+# jenis data debit atau curah hujan?
+dbt <- "Debit"
+hjn <- "Hujan"
+dbt_title <- expression("Debit Harian"~(m^3/dtk))
+dbt_labs <- expression("Debit"~(m^3/dtk))
+hjn_title <- "Nilai Curah Hujan (mm)"
+hjn_labs <- "Curah Hujan (mm)"
+
+jenis_data <- hjn        # rubah sesuai jenis data yang ada, hujan atau debit?
+judul_data <- hjn_title  # rubah sesuai jenis data yang ada, hujan atau debit?
+judul_label <- hjn_labs  # rubah sesuai jenis data yang ada, hujan atau debit?
+
+
+nama_pos <- "Stasiun Hujan Cisomang"
+
+data <- read.csv("data_and_code/sta_cisomang.csv") #input data dari excel
+names(data) <- c("Tanggal",jenis_data) # rubah nama
+data <- subset(data,data[,2] != "-") 
+data <- data[,1:2]
+
+data$Tanggal <- as.Date(data[,1],format="%d-%b-%y") #cek format tanggal dari data original.
+data[,2] <- as.numeric(as.character(data[,2])) #JANGAN LUPA as.character.
+
+g <- ggplot(data,aes(x=Tanggal, y=Hujan))+geom_line(col="blue3") + 
+  labs(title=judul_data,subtitle = nama_pos,x = "Waktu",y=judul_label) +
+  theme_update(plot.title=element_text(hjust=0.5))+
+  theme_update(plot.subtitle=element_text(hjust=0.5))+
+  theme_update(axis.title.y=element_text(angle=90))+
+  theme(plot.background = element_rect(colour = "black", size = 0.5))
+g 
+```
 
 
 **insert tabel 3-2**
