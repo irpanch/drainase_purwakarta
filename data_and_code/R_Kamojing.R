@@ -35,7 +35,7 @@ names(data) <- c("Tanggal",jenis_data)
 ###----------------------settingan awal---------------###
 
 # 1.1 filter to only data with values.
-data <- subset(data,data[,2] != "-")
+data <- subset(data,data[,2] != "-") 
 
 # filter hanya di dua kolom pertama
 data <- data[,1:2]
