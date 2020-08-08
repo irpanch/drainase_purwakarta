@@ -139,6 +139,6 @@ knitr::opts_chunk$set(fig.path = 'gambar/',fig.align = 'center',fig.width = 6,fi
 
 \FloatBarrier
 \newpage
-\fancyhead[CO,CE]{\scriptsize References}
+\fancyhead[CO,CE]{\scriptsize Daftar Pustaka}
 
-# References
+# Daftar Pustaka
