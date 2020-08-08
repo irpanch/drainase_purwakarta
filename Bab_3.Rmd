@@ -82,7 +82,34 @@ g
 ```
 
 
+
 **insert tabel 3-2**
+
+```{r hujan-max, fig.cap="Data Hujan Maksimum \\label{hujan-max}",echo=FALSE, message=FALSE}
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(kableExtra)
+
+
+# cek struktur data
+str(data)
+
+# tambah kolom tahun, bulan, dan hari
+data$DOY <- as.numeric(yday(data$Tanggal))
+data$Tahun <- as.numeric(format(data$Tanggal,"%Y"))
+data$Bulan <- as.numeric(format(data$Tanggal,"%m"))
+
+data_max <- data %>%
+  group_by(Tahun) %>% 
+  summarise(Hujan_Max = max(Hujan))
+
+kable(data_max, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Hujan Maksimum.\\label{hujan-max}") %>%
+    kable_styling(latex_options=c("HOLD_position"))
+```
+
+
+
 
 ## Uji Outlier
 
