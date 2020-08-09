@@ -119,19 +119,24 @@ data_max <- data %>%
 
 kable(data_max,"latex", booktabs=TRUE, linesep="", caption="Data Hujan Maksimum.\\label{hujan-max}") %>% kable_styling(latex_options=c("HOLD_position"))
 
-# kable(data_max, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Hujan Maksimum.\\label{hujan-max}") %>%
-#     kable_styling(latex_options=c("HOLD_position"))
 ```
-
-
 
 
 ## Uji Outlier
 
-Sebelum data hujan dipakai dalam analisa maka diperlukan pemeriksaan terlebih dahulu untuk memastikan bahwa data yang tercatat adalah benar secara statistik. Salah satu metode pemeriksaan yang umum digunakan adalah uji outlier. Pada pemeriksaan adanya outlier, seri data hujan harian maksimum tahunan, baik outlier atas maupun outlier bawah dilakukan dengan metoda yang dikembangkan oleh Water Resource Council (1981). Bila terdapat outlier, maka data outlier harus dipertimbangkan secara teknis sebelum seri data digunakan untuk analisis hidrologi lebih lanjut.
-Persamaan frekuensi untuk mendeteksi adanya outlier atas adalah :
+Sebelum data hujan dipakai dalam analisa maka diperlukan pemeriksaan terlebih dahulu untuk memastikan bahwa data yang tercatat adalah benar secara statistik. Salah satu metode pemeriksaan yang umum digunakan adalah uji outlier. Pada pemeriksaan adanya outlier, seri data hujan harian maksimum tahunan, baik outlier atas maupun outlier bawah dilakukan dengan metoda yang dikembangkan oleh @Helsel2002. Bila terdapat outlier, maka data outlier harus dipertimbangkan secara teknis sebelum seri data digunakan untuk analisis hidrologi lebih lanjut.
+Persamaan frekuensi untuk mendeteksi adanya outlier ditampilkan dalam persamaan \ref{eq:uji-outlier}.
 
-**insert rumus**
+\begin{equation}
+\label{eq:uji-outlier}
+X_H = X_{rerata}+S\times K_n
+\end{equation}
+
+dimana:
+X_H &= Batas (threshold) dari outlier atas, dalam logaritma
+$\hat{y}$ &= Nilai rata-rata dari data dalam bentuk logaritma
+
+
 
 ## Landscape Page
 Coba halaman landscape

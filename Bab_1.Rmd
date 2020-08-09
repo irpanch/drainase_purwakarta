@@ -11,8 +11,8 @@ header-includes:
 
 # Pendahuluan\label{label1}
 
-<!-- Contoh untuk referensi ke daftar pustaka:
-This is an example introduction. Let's cite someone here [@Author2016]. And in text as well: @Author2013 says that we can cite people in text. Or we can write the name, and than use the citation thingy to print the year: Blabla states something about something [-@Blabla2010]. Or how about multiple citations [@Author2016; @Author2013]. Or we citation with a little of text around it [for example see @Blabla2010, pp. 92-93]. -->
+<!-- Contoh untuk referensi ke daftar pustaka: -->
+<!-- This is an example introduction. Let's cite someone here [@Author2016]. And in text as well: @Author2013 says that we can cite people in text. Or we can write the name, and than use the citation thingy to print the year: Blabla states something about something [-@Blabla2010]. Or how about multiple citations [@Author2016; @Author2013]. Or we citation with a little of text around it [for example see @Blabla2010, pp. 92-93]. -->
 
 
 ## Latar Belakang
