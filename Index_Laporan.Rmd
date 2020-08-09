@@ -22,6 +22,7 @@ header-includes:
 - \counterwithin{table}{section}
 - \usepackage{graphicx}
 - \usepackage{pdflscape}
+- \usepackage{enumitem}
 ---
 
 ---

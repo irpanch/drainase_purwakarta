@@ -122,6 +122,27 @@ kable(data_max,"latex", booktabs=TRUE, linesep="", caption="Data Hujan Maksimum.
 
 ```
 
+```{r grafik-max, fig.cap="Grafik Hujan Harian Maksimum Tiap Tahun Pengamatan \\label{grafik-max}",echo=FALSE,message=FALSE}
+
+
+```
+
+
+
+```{r hujan-harian-rata2, fig.cap="Hujan Harian Rata-Rata  \\label{hujan-harian-rata2}",echo=FALSE,message=FALSE}
+## create mean per day
+mean_data <- aggregate(data[jenis_data],list(data$DOY),mean)
+
+## add DOY and YEAR columns
+mean_data <- cbind(DOY=seq(1:366),YEAR=2018,mean_data)
+
+qplot(x=mean_data$DOY,y=mean_data$Hujan,
+      main = c("Curah Hujan Harian Rata-Rata (mm)",judul_data),
+      ylab = judul_label,
+      xlab = "Waktu (Hari)")+geom_smooth(span=0.3)
+
+```
+
 
 ## Uji Outlier
 
@@ -137,7 +158,7 @@ dimana:
 \begin{itemize}[leftmargin=2.0cm, labelsep=0.5cm]
 \item[$X_H$ =] Batas (threshold) dari outlier atas, dalam logaritma
 \item[$S$ =] Nilai rata-rata dari data dalam bentuk logaritma
-\item[$K_n$ =] Konstanta uji *outlier*, merupakan fungsi dari jumlah data sampel.
+\item[$K_n$ =] Konstanta uji \textit{outlier}, merupakan fungsi dari jumlah data sampel.
 \end{itemize}
 
 Persamaan serupa untuk mendeteksi adanya *outlier* bawah adalah:
