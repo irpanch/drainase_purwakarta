@@ -3,6 +3,7 @@ output: pdf_document
 header-includes:
   \usepackage{amsmath}
   \usepackage{pdflscape}
+  \usepackage{enumitem}
 ---
 
 
@@ -125,7 +126,7 @@ kable(data_max,"latex", booktabs=TRUE, linesep="", caption="Data Hujan Maksimum.
 ## Uji Outlier
 
 Sebelum data hujan dipakai dalam analisa maka diperlukan pemeriksaan terlebih dahulu untuk memastikan bahwa data yang tercatat adalah benar secara statistik. Salah satu metode pemeriksaan yang umum digunakan adalah uji outlier. Pada pemeriksaan adanya outlier, seri data hujan harian maksimum tahunan, baik outlier atas maupun outlier bawah dilakukan dengan metoda yang dikembangkan oleh @Helsel2002. Bila terdapat outlier, maka data outlier harus dipertimbangkan secara teknis sebelum seri data digunakan untuk analisis hidrologi lebih lanjut.
-Persamaan frekuensi untuk mendeteksi adanya outlier ditampilkan dalam persamaan \ref{eq:uji-outlier}.
+Persamaan frekuensi untuk mendeteksi adanya outlier atas ditampilkan dalam persamaan \ref{eq:uji-outlier}.
 
 \begin{equation}
 \label{eq:uji-outlier}
@@ -133,8 +134,20 @@ X_H = X_{rerata}+S\times K_n
 \end{equation}
 
 dimana:
-X_H &= Batas (threshold) dari outlier atas, dalam logaritma
-$\hat{y}$ &= Nilai rata-rata dari data dalam bentuk logaritma
+\begin{itemize}[leftmargin=2.0cm, labelsep=0.5cm]
+\item[$X_H$ =] Batas (threshold) dari outlier atas, dalam logaritma
+\item[$S$ =] Nilai rata-rata dari data dalam bentuk logaritma
+\item[$K_n$ =] Konstanta uji *outlier*, merupakan fungsi dari jumlah data sampel.
+\end{itemize}
+
+Persamaan serupa untuk mendeteksi adanya *outlier* bawah adalah:
+
+\begin{equation}
+\label{eq:uji-outlier}
+X_L = X_{rerata}+S\times K_n
+\end{equation}
+
+dimana $X_L$ adalah batas dari outlier bawah dalam bentuk logaritma, sedangkan variabel lainnya sama dengan di atas.
 
 
 
