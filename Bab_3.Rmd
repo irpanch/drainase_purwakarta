@@ -44,7 +44,7 @@ kable(Koordinat_Pos_Hujan, "latex", escape=FALSE, booktabs=TRUE, linesep="", cap
     kable_styling(latex_options=c("HOLD_position"))
 ```
 
-Ketersediaan data untuk Stasiun Cisomang adalah curah hujan harian selama 24 tahun yaitu dari tahun 1995 sampai dengan tahun 2018. Rekapitulasi curah hujan yang akan digunakan ditampilkan pada tabel dan Gambar \ref{data-hujan}.
+Ketersediaan data untuk Stasiun Cisomang adalah curah hujan harian selama 24 tahun yaitu dari tahun 1995 sampai dengan tahun 2018. Rekapitulasi curah hujan yang akan digunakan ditampilkan pada Tabel \ref{hujan-max} dan Gambar \ref{data-hujan}.
 
 ```{r data-hujan, fig.cap="Data Stasiun Hujan \\label{data-hujan}",echo=FALSE}
 library(ggplot2)
@@ -78,14 +78,28 @@ g <- ggplot(data,aes(x=Tanggal, y=Hujan))+geom_line(col="blue3") +
   theme_update(plot.subtitle=element_text(hjust=0.5))+
   theme_update(axis.title.y=element_text(angle=90))+
   theme(plot.background = element_rect(colour = "black", size = 0.5))
-g 
+
+index_max <- data[,2] == max(data[,2])
+index_min <- data[,2] == min(data[,2])
+max_min_plot <- ggplot(data,aes(x=Tanggal, y=data[,2]),label=jenis_data)+geom_line(color="blue3") + 
+  labs(title=judul_data,subtitle = nama_pos,x = "Waktu",y=judul_label) +
+  geom_point(data=data[index_max,],aes(Tanggal,Hujan,color="MAX"))+
+  geom_point(data=data[index_min,],aes(Tanggal,Hujan,color="MIN"))+
+  geom_text(aes(label=ifelse(Hujan==max(Hujan),as.character(Hujan),'')),hjust=-0.5,vjust=0.5)
+
+kejadian_max <- data[index_max,]
+tanggal_max <- kejadian_max[,1]
+tanggal_max
+nilai_max <- max(data[,2])
+
+max_min_plot
+
 ```
 
+Hujan maksimum yang terjadi di `r nama_pos` adalah `r nilai_max` mm pada `r tanggal_max`.
 
 
-**insert tabel 3-2**
-
-```{r hujan-max, fig.cap="Data Hujan Maksimum \\label{hujan-max}",echo=FALSE, message=FALSE}
+```{r hujan-max, echo=FALSE, message=FALSE, include=TRUE}
 library(ggplot2)
 library(dplyr)
 library(lubridate)
@@ -93,7 +107,7 @@ library(kableExtra)
 
 
 # cek struktur data
-str(data)
+# str(data)
 
 # tambah kolom tahun, bulan, dan hari
 data$DOY <- as.numeric(yday(data$Tanggal))
@@ -104,8 +118,10 @@ data_max <- data %>%
   group_by(Tahun) %>% 
   summarise(Hujan_Max = max(Hujan))
 
-kable(data_max, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Hujan Maksimum.\\label{hujan-max}") %>%
-    kable_styling(latex_options=c("HOLD_position"))
+kable(data_max,"latex", booktabs=TRUE, linesep="", caption="Data Hujan Maksimum.\\label{hujan-max}") %>% kable_styling(latex_options=c("HOLD_position"))
+
+# kable(data_max, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Hujan Maksimum.\\label{hujan-max}") %>%
+#     kable_styling(latex_options=c("HOLD_position"))
 ```
 
 
