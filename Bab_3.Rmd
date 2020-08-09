@@ -89,7 +89,6 @@ max_min_plot <- ggplot(data,aes(x=Tanggal, y=data[,2]),label=jenis_data)+geom_li
 
 kejadian_max <- data[index_max,]
 tanggal_max <- kejadian_max[,1]
-tanggal_max
 nilai_max <- max(data[,2])
 
 max_min_plot
