@@ -150,7 +150,7 @@ library(lubridate)
 # tambah kolom tahun, bulan, dan hari
 data$DOY <- as.numeric(yday(data$Tanggal))
 data$Tahun <- as.numeric(format(data$Tanggal,"%Y"))
-data$Bulan <- as.numeric(format(data$Tanggal,"%B"))
+data$Bulan <- as.numeric(format(data$Tanggal,"%m"))
 
 ## create mean per day
 mean_data <- aggregate(data[jenis_data],list(data$DOY),mean)
@@ -232,6 +232,66 @@ X_L = X_{rerata}+S\times K_n
 
 dimana $X_L$ adalah batas dari outlier bawah dalam bentuk logaritma, sedangkan variabel lainnya sama dengan di atas.
 
+**insert tabel 3-3. nilai test outlier**
+
+Hasil pemeriksaan adanya outlier untuk hujan maksimum harian di lokasi pekerjaan adalah sebagai berikut :
+
+**insert tabel 3-4. Hasil Pemeriksaan Outlier (Sta. Cisomang)**
+
+Dari hasil pemeriksaan outlier tidak ditemukan adanya nilai hujan makismum yang berada di atas batas atas dan di bawah batas bawah. Sehingga data hujan maksimum tersebut dapat digunakan untuk analisa berikutnya.
+
+## Analisa Debit Banjir
+
+### Bagan Alir Perhitungan Debit Banjir
+
+Berdasarkan SNI 2415-2016 tentang *“Tata Cara Perhitungan Debit Banjir Rencana”*, bagan alir perhitungan banjir dapat dilihat pada **Gambar 3 6** yang memperlihatkan prosedur umum yang diperlukan untuk menghitung debit banjir berdasarkan ketersediaan data di lapangan
+
+**insert Gambar 3 6 Bagan Alir Perhitungan Debit Rencana**
+
+Karena ketersediaan data dengan rentang panjang yang berada di lokasi hanyalah data hujan maksimum harian selama 24 tahun dan luas sub DAS yang kurang dari 5,000 Hektar (50 Km2), maka prosedur yang dilakukan berdasarkan bagan alir diatas adalah: pengumpulan data hujan harian maksimum tiap tahun pencatatan, analisa frekuensi, intensitas hujan, analisis rasional, dan terakhir memperoleh debit banjir rencana.
+
+### Analisa Frekuensi
+
+Analisa curah hujan maksimum rencana di sub DAS Lokasi pekerjaan dilakukan dengan metoda statistik. Sebararan teoritis yang digunakan dalam analisis frekuensi dari berbagai distribusi, yaitu sebaran teoritis distribusi Normal, Log-Normal 2 parameter, Log-Pearson tipe III, dan Gumbel. Berikut ini diuraikan formula untuk menentukan kedalaman hujan periode ulang tertentu untuk setiap distribusi frekuensi hujan.
+
+#### Distribusi Normal
+
+Distribusi normal adalah simetris terhadap sumbu vertikal dan berbentuk lonceng yang juga disebut distribusi Gauss. Distribusi normal mempunyai dua parameter yaitu rata-rata µ dan deviasi standar *symbol* dari populasi. Dalam praktek, nilai rata-rata *symbol* dan deviasi standar *symbol* diturunkan dari data sampel untuk menggantikan *symbol* dan *symbol*. Persamaan distribusi normal adalah sebagai berikut:
+
+**insert Rumus**
+
+**Tabel 3 5 Tabel Z Distribusi Normal. Masuk lampiran aja kayanya**
+
+**Tabel 3 6  Perhitungan Distribusi Frekuensi Hujan Distribusi Normal**
+
+**Tabel 3 7  Perhitungan Debit Banjir per Periode Kala Ulang dengan Distribusi Normal**
+
+
+#### Distribusi Log Normal
+
+#### Distribusi Log Pearson III
+
+#### Distribusi Gumbel
+
+
+**Tabel 3 17 Curah Hujan Maximum Rencana**
+
+**Gambar 3 7 Plotting Curah Hujan Maksimum Rencana**
+
+### Pemilihan Fungsi Distribusi
+
+Selanjutnya setelah dilakukan analisa frekuensi dilakukan uji kesesuaian distribusi yang dimaksudkan untuk mengetahui kebenaran analisa curah hujan baik terhadap simpangan data vertikal ataupun simpangan data horisontal.
+Uji kesesuaian distribusi frekuensi digunakan untuk menguji apakah pemilihan distribusi yang digunakan dalam perhitungan curah hujan rencana diterima atau ditolak, maka perlu dilakukan uji kesesuaian distribusi baik secara statistik maupun simpangan terkecil. Untuk pengujian statistik didasarkan pada SNI 2415-2016. Sedangkan untuk uji simpangan digunakan metode Smirnov Kolmogorof.
+
+#### Penentuan Jenis Distribusi Berdasarkan Statistik.
+
+#### Uji Kolmogorov-Smirnov.
+
+### Debit Banjir
+
+####	Metode Rasional Praktis
+
+## Pemilihan Kala Ulang Debit Banjir
 
 
 ## Landscape Page
