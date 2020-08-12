@@ -79,7 +79,7 @@ Koordinat_Pos_Hujan <- read_excel("data_and_code/Koordinat_Pos_Hujan.xlsx",
         "text", "text", "skip", "skip"))
 
 kable(Koordinat_Pos_Hujan, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Koordinat Pos Hujan.\\label{tbl_pos_hujan}") %>%
-    kable_styling(latex_options=c("HOLD_position"))
+    kable_styling(latex_options=c("HOLD_position","scale_down"),repeat_header_text = "\\textit{(lanjutan)}")
 ```
 
 Ketersediaan data untuk Stasiun Cisomang adalah curah hujan harian selama 24 tahun yaitu dari tahun 1995 sampai dengan tahun 2018. Hujan maksimum yang terjadi di `r nama_pos` adalah `r nilai_max` mm pada `r tanggal_max`. Rekapitulasi curah hujan yang akan digunakan ditampilkan pada Tabel \ref{hujan-max} dan Gambar \ref{data-hujan}.
@@ -109,6 +109,32 @@ nilai_max <- max(data[,2])
 max_min_plot + theme(plot.background = element_rect(colour = "black", size = 0.5))
 
 ```
+```{r, include=TRUE, echo=FALSE, message=FALSE}
+library(reshape2)
+library(dplyr)
+library(kableExtra)
+library(lubridate)
+
+# tambah kolom tahun, bulan, dan hari
+data$DOY <- as.numeric(yday(data$Tanggal))
+data$Tahun <- as.numeric(format(data$Tanggal,"%Y"))
+data$Bulan <- as.numeric(format(data$Tanggal,"%m"))
+data$Nama_Bulan <- month.abb[data$Bulan]
+
+data_melt <- melt(data,id=c("Tahun","Nama_Bulan"),
+                  measure="Hujan",value.name = "Hujan")
+
+data_pivot <- dcast(data_melt,Tahun~Nama_Bulan,
+                    margins = T,fun.aggregate = sum,
+                    value.var = "Hujan")
+
+data_pivot2 <- data_pivot[,c(1,6,5,9,2,10,8,7,3,13,12,11,4,14)]
+
+
+kable(data_pivot2, "latex", longtable=TRUE,booktabs=TRUE, linesep="", caption="Jumlah Hujan Bulanan.\\label{tbl_jumlah_hujan}") %>%
+    kable_styling(latex_options=c("HOLD_position","repeat_header"),font_size = 6,repeat_header_text = "\\textit{(lanjutan)}")
+```
+
 
 
 ```{r matrixplot_hujan, echo=FALSE, fig.cap="Matrixplot Jumlah Hujan Bulanan \\label{matrixplot-hujan}", fig.height=5, fig.width=8, message=FALSE, include=TRUE}
@@ -142,15 +168,10 @@ print(matrixplot(mat, ColorRamp = "Precipitation",
 ```
 
 
-
-
 ```{r hujan-harian-rata2, fig.cap="Hujan Harian Rata-Rata  \\label{hujan-harian-rata2}",echo=FALSE,message=FALSE}
 library(lubridate)
 
-# tambah kolom tahun, bulan, dan hari
-data$DOY <- as.numeric(yday(data$Tanggal))
-data$Tahun <- as.numeric(format(data$Tanggal,"%Y"))
-data$Bulan <- as.numeric(format(data$Tanggal,"%m"))
+
 
 ## create mean per day
 mean_data <- aggregate(data[jenis_data],list(data$DOY),mean)
@@ -188,7 +209,7 @@ data_max <- data %>%
   group_by(Tahun) %>% 
   summarise(Hujan_Max = max(Hujan))
 
-kable(data_max,"latex", longtable=T, booktabs=TRUE, linesep="", caption="Data Hujan Maksimum.\\label{hujan-max}") %>% kable_styling(latex_options=c("HOLD_position","repeat_header"))
+kable(data_max,"latex", longtable=T, booktabs=TRUE, linesep="", caption="Data Hujan Maksimum.\\label{hujan-max}") %>% kable_styling(latex_options=c("HOLD_position","repeat_header"),repeat_header_text = "\\textit{(lanjutan)}")
 
 ```
 
