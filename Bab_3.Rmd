@@ -282,9 +282,26 @@ Persamaan serupa untuk mendeteksi adanya *outlier* bawah adalah:
 X_L = X_{rerata}+S\times K_n
 \end{equation}
 
-dimana $X_L$ adalah batas dari outlier bawah dalam bentuk logaritma, sedangkan variabel lainnya sama dengan di atas.
+dimana $X_L$ adalah batas dari outlier bawah dalam bentuk logaritma, sedangkan variabel lainnya sama dengan di atas. @VenTChow1988 telah merumuskan nlai $K_n$ berdasarkan jumlah uji sampel yang ditampilkan pada Tabel \ref{tbl_kn_outlier} dibawah ini.
 
-**insert tabel 3-3. nilai test outlier**
+
+```{r tabel-uji-outlier, include=TRUE, echo=FALSE, message=FALSE}
+library(readxl)
+library(dplyr)
+library(kableExtra)
+library(readxl)
+
+Uji_Outlier <- read_excel("data_and_code/Uji Outlier.xlsx", 
+    sheet = "tabel_kn")
+
+opts <- options(knitr.kable.NA="")
+
+kable(Uji_Outlier, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Nilai Kn Outlier Berdasarakan Jumlah Sampel \\label{tbl_kn_outlier}") %>%
+    kable_styling(latex_options=c("HOLD_position"),font_size = 7) %>% 
+  footnote(general_title = "Sumber:",title_format=c("italic"),general = "Ven Te Chow, 1988")
+
+
+```
 
 Hasil pemeriksaan adanya outlier untuk hujan maksimum harian di lokasi pekerjaan adalah sebagai berikut :
 
