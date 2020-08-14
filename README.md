@@ -84,3 +84,9 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
 
 9. Cara insert number section di daftar isi? karena sekarang (30 Juli 2020) di daftar isi, tabel, maupun gambar, nomor halamannya masih belum memasukkan nomor bab.  
     jadi masih `Latar Belakang...1`. Inginnya `Latar Belakang...1-1`. dan seterusnya. 
+    
+10. Vlookup dalam R.  
+misal untuk pembahasan uji outlier, apakah bisa dengan jumlah sampel hujan maksimum berapa, nilai kn nya otomatis bisa diketahui? seperti fungsi vlookup dalam excel.
+
+11. continous tabel yang panjang.  
+cara agar tampilan tabel nilai Kn sama seperti di excel. baris pindah ke kolom supaya lebih mudah terlihat.
