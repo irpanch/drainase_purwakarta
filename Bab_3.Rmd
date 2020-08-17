@@ -298,7 +298,7 @@ Uji_Outlier <- read_excel("data_and_code/Uji Outlier.xlsx",
 opts <- options(knitr.kable.NA="")
 
 kable(Uji_Outlier[1:21,], "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Nilai Kn Outlier Berdasarakan Jumlah Sampel \\label{tbl_kn_outlier}") %>%
-    kable_styling(latex_options=c("HOLD_position"),font_size = 7) %>% 
+    kable_styling(latex_options=c("HOLD_position"),font_size = 8) %>% 
   footnote(general_title = "Sumber:",title_format=c("italic"),general = "Ven Te Chow, 1988")
 
 
@@ -311,8 +311,6 @@ kable(Uji_Outlier[1:21,], "latex", escape=FALSE, booktabs=TRUE, linesep="", capt
 
 data_max$log_x <- log10(data_max$Hujan_Max)
 
-
-
 library(expss) # package untuk lookup value di R.
 
 sd_data <-sd(data_max$log_x)
@@ -324,26 +322,30 @@ nilai_kn <- vlookup_df(jumlah_data,Uji_Outlier,result_column=2,
         lookup_column=1)
 
 
-# ini masih beda dengan yang excel, perlu pakai log base 10.
+# ini udah sama dengan hasil excel
 outlier_atas <- mean(data_max$log_x)+(sd_data*nilai_kn)
 outlier_bawah <- mean(data_max$log_x)-(sd_data*nilai_kn)
+
+antilog_out_atas <- 10^outlier_atas
+antilog_out_bawah <- 10^outlier_bawah
 
 ```
 
 
-Nilai rata-rata pada data hujan dalam bentuk logaritma adalah `r round(mean(data_max$log_x),2)` mm, sedangkan nilai standar deviasinya adalah `r round(sd_data,4)` (dalam bentuk logaritma). Berdasarkan dari tabel \ref{tbl_kn_outlier}, dengan jumlah data `r count(data_max)` tahun maka nilai $K_n$ adalah `r nilai_kn`. Dengan menggunakan persamaan \ref{eq:uji-outlier_atas} dan persamaan \ref{eq:uji-outlier_bawah}, nilai batas *outlier* atas adalah `r round(outlier_atas,3)` dan `r round(outlier_bawah,3)` untuk *outlier* bawah. Atau jika dibuat *antilog*, nilai outlier atas adalah `r round(10^outlier_atas,2)` mm dan `r round(10^outlier_bawah,2)` mm untuk outlier bawah.
+Nilai rata-rata pada data hujan dalam bentuk logaritma adalah `r round(mean(data_max$log_x),2)` mm, sedangkan nilai standar deviasinya adalah `r round(sd_data,4)` (dalam bentuk logaritma). Berdasarkan dari tabel \ref{tbl_kn_outlier}, dengan jumlah data `r count(data_max)` tahun maka nilai $K_n$ adalah `r nilai_kn`. Dengan menggunakan persamaan \ref{eq:uji-outlier_atas} dan persamaan \ref{eq:uji-outlier_bawah}, nilai batas *outlier* atas adalah `r round(outlier_atas,3)` dan `r round(outlier_bawah,3)` untuk *outlier* bawah. Atau jika dibuat *antilog*, nilai outlier atas adalah `r round(antilog_out_atas,2)` mm dan `r round(antilog_out_bawah,2)` mm untuk outlier bawah.
 
-Dari hasil pemeriksaan outlier tersebut disimpulkan bahwa tidak ditemukan adanya nilai hujan makismum yang berada di atas batas atas dan di bawah batas bawah. Karena nilai maksimum data sebesar `r max(data_max$Hujan_Max)` mm berada dibawah batas atas (`r round(10^outlier_atas,2)` mm)  dan nilai minimum data `r min(data_max$Hujan_Max)` mm berada lebih besar dari batas bawah  `r round(10^outlier_bawah,2)` mm. Sehingga data hujan maksimum tersebut dapat digunakan untuk analisa berikutnya.
+Dari hasil pemeriksaan outlier tersebut disimpulkan bahwa tidak ditemukan adanya outlier. Artinya tidak ada nilai hujan makismum yang berada di atas batas atas dan di bawah batas bawah. Karena nilai maksimum data sebesar `r max(data_max$Hujan_Max)` mm berada dibawah batas atas (`r round(antilog_out_atas,2)` mm)  dan nilai minimum data `r min(data_max$Hujan_Max)` mm berada lebih besar dari batas bawah  `r round(antilog_out_bawah,2)` mm. Sehingga data hujan maksimum tersebut dapat digunakan untuk analisa berikutnya.
 
 ## Analisa Debit Banjir
 
 ### Bagan Alir Perhitungan Debit Banjir
 
-Berdasarkan SNI 2415-2016 tentang *“Tata Cara Perhitungan Debit Banjir Rencana”*, bagan alir perhitungan banjir dapat dilihat pada **Gambar 3 6** yang memperlihatkan prosedur umum yang diperlukan untuk menghitung debit banjir berdasarkan ketersediaan data di lapangan
+Berdasarkan SNI 2415-2016 tentang *“Tata Cara Perhitungan Debit Banjir Rencana”*, bagan alir perhitungan banjir dapat dilihat pada Gambar \ref{bagan_alir_banjir} yang memperlihatkan prosedur umum yang diperlukan untuk menghitung debit banjir berdasarkan ketersediaan data di lapangan.
 
-**insert Gambar 3 6 Bagan Alir Perhitungan Debit Rencana**
+![Bagan Alir Perhitungan Debit Banjir Rencana.(*Sumber: SNI 2415:2016*) \label{bagan_alir_banjir}](gambar\bagan_alir_banjir.png)
 
-Karena ketersediaan data dengan rentang panjang yang berada di lokasi hanyalah data hujan maksimum harian selama 24 tahun dan luas sub DAS yang kurang dari 5,000 Hektar (50 Km2), maka prosedur yang dilakukan berdasarkan bagan alir diatas adalah: pengumpulan data hujan harian maksimum tiap tahun pencatatan, analisa frekuensi, intensitas hujan, analisis rasional, dan terakhir memperoleh debit banjir rencana.
+
+Karena ketersediaan data dengan rentang panjang yang berada di lokasi hanyalah data hujan maksimum harian selama `r count(data_max)` tahun dan luas sub DAS yang kurang dari 5,000 Hektar (50 Km^2^), maka prosedur yang dilakukan berdasarkan bagan alir diatas adalah: pengumpulan data hujan harian maksimum tiap tahun pencatatan, analisa frekuensi, intensitas hujan, analisis rasional, dan terakhir memperoleh debit banjir rencana.
 
 ### Analisa Frekuensi
 
