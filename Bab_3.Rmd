@@ -261,10 +261,10 @@ ggplot(data_max,aes(x=Tahun, y=Hujan_Max))+geom_col(col="blue3",fill="cadetblue3
 ## Uji Outlier
 
 Sebelum data hujan dipakai dalam analisa maka diperlukan pemeriksaan terlebih dahulu untuk memastikan bahwa data yang tercatat adalah benar secara statistik. Salah satu metode pemeriksaan yang umum digunakan adalah uji outlier. Pada pemeriksaan adanya outlier, seri data hujan harian maksimum tahunan, baik outlier atas maupun outlier bawah dilakukan dengan metoda yang dikembangkan oleh @Helsel2002. Bila terdapat outlier, maka data outlier harus dipertimbangkan secara teknis sebelum seri data digunakan untuk analisis hidrologi lebih lanjut.
-Persamaan frekuensi untuk mendeteksi adanya outlier atas ditampilkan dalam persamaan \ref{eq:uji-outlier}.
+Persamaan frekuensi untuk mendeteksi adanya outlier atas ditampilkan dalam persamaan \ref{eq:uji-outlier_atas}.
 
 \begin{equation}
-\label{eq:uji-outlier}
+\label{eq:uji-outlier_atas}
 X_H = X_{rerata}+S\times K_n
 \end{equation}
 
@@ -278,8 +278,8 @@ dimana:
 Persamaan serupa untuk mendeteksi adanya *outlier* bawah adalah:
 
 \begin{equation}
-\label{eq:uji-outlier}
-X_L = X_{rerata}+S\times K_n
+\label{eq:uji-outlier_bawah}
+X_L = X_{rerata}-S\times K_n
 \end{equation}
 
 dimana $X_L$ adalah batas dari outlier bawah dalam bentuk logaritma, sedangkan variabel lainnya sama dengan di atas. @VenTChow1988 telah merumuskan nlai $K_n$ berdasarkan jumlah uji sampel yang ditampilkan pada Tabel \ref{tbl_kn_outlier} dibawah ini.
@@ -291,23 +291,49 @@ library(dplyr)
 library(kableExtra)
 library(readxl)
 
+
 Uji_Outlier <- read_excel("data_and_code/Uji Outlier.xlsx", 
-    sheet = "tabel_kn")
+    sheet = "tabel_kn_susun")
 
 opts <- options(knitr.kable.NA="")
 
-kable(Uji_Outlier, "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Nilai Kn Outlier Berdasarakan Jumlah Sampel \\label{tbl_kn_outlier}") %>%
+kable(Uji_Outlier[1:21,], "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Nilai Kn Outlier Berdasarakan Jumlah Sampel \\label{tbl_kn_outlier}") %>%
     kable_styling(latex_options=c("HOLD_position"),font_size = 7) %>% 
   footnote(general_title = "Sumber:",title_format=c("italic"),general = "Ven Te Chow, 1988")
 
 
 ```
+```{r, echo=FALSE, message=FALSE}
 
-Hasil pemeriksaan adanya outlier untuk hujan maksimum harian di lokasi pekerjaan adalah sebagai berikut :
+# hitung hasil uji outlier
 
-**insert tabel 3-4. Hasil Pemeriksaan Outlier (Sta. Cisomang)**
+## tambah kolom logaritma base 10
 
-Dari hasil pemeriksaan outlier tidak ditemukan adanya nilai hujan makismum yang berada di atas batas atas dan di bawah batas bawah. Sehingga data hujan maksimum tersebut dapat digunakan untuk analisa berikutnya.
+data_max$log_x <- log10(data_max$Hujan_Max)
+
+
+
+library(expss) # package untuk lookup value di R.
+
+sd_data <-sd(data_max$log_x)
+
+jumlah_data <- count(data_max)
+jumlah_data <- as.numeric(jumlah_data[1,1]) # convert tibble ke vector
+
+nilai_kn <- vlookup_df(jumlah_data,Uji_Outlier,result_column=2,
+        lookup_column=1)
+
+
+# ini masih beda dengan yang excel, perlu pakai log base 10.
+outlier_atas <- mean(data_max$log_x)+(sd_data*nilai_kn)
+outlier_bawah <- mean(data_max$log_x)-(sd_data*nilai_kn)
+
+```
+
+
+Nilai rata-rata pada data hujan dalam bentuk logaritma adalah `r round(mean(data_max$log_x),2)` mm, sedangkan nilai standar deviasinya adalah `r round(sd_data,4)` (dalam bentuk logaritma). Berdasarkan dari tabel \ref{tbl_kn_outlier}, dengan jumlah data `r count(data_max)` tahun maka nilai $K_n$ adalah `r nilai_kn`. Dengan menggunakan persamaan \ref{eq:uji-outlier_atas} dan persamaan \ref{eq:uji-outlier_bawah}, nilai batas *outlier* atas adalah `r round(outlier_atas,3)` dan `r round(outlier_bawah,3)` untuk *outlier* bawah. Atau jika dibuat *antilog*, nilai outlier atas adalah `r round(10^outlier_atas,2)` mm dan `r round(10^outlier_bawah,2)` mm untuk outlier bawah.
+
+Dari hasil pemeriksaan outlier tersebut disimpulkan bahwa tidak ditemukan adanya nilai hujan makismum yang berada di atas batas atas dan di bawah batas bawah. Karena nilai maksimum data sebesar `r max(data_max$Hujan_Max)` mm berada dibawah batas atas (`r round(10^outlier_atas,2)` mm)  dan nilai minimum data `r min(data_max$Hujan_Max)` mm berada lebih besar dari batas bawah  `r round(10^outlier_bawah,2)` mm. Sehingga data hujan maksimum tersebut dapat digunakan untuk analisa berikutnya.
 
 ## Analisa Debit Banjir
 

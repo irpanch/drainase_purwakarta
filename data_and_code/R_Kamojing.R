@@ -269,3 +269,7 @@ dle$returnlev
 write.csv(dle$returnlev,file = "curah hujan atau debit Rencana.csv")
 
 
+## mencari hasil uji outlier
+data_max$log_x <- log10(data_max$Hujan_Max)
+
+View(data_max)
