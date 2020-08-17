@@ -272,4 +272,34 @@ write.csv(dle$returnlev,file = "curah hujan atau debit Rencana.csv")
 ## mencari hasil uji outlier
 data_max$log_x <- log10(data_max$Hujan_Max)
 
-View(data_max)
+data_max_rata2 <- mean(data_max$Hujan_Max)
+
+data_max_rata2
+
+sd(data_max$Hujan_Max)
+
+str(data_max)
+
+data_max <- data_max[,1:2]
+
+nilai_kn <- data_max$Hujan_Max
+
+data_max$Hujan_Max
+
+
+
+install.packages("expss")
+library(expss)
+
+jumlah_data <- count(data_max)
+
+str(jumlah_data)
+
+View(jumlah_data)
+
+jumlah_data <- as.numeric(jumlah_data[1,1])
+
+vlookup_df(jumlah_data,Uji_Outlier,result_column=2,
+        lookup_column=1)
+
+??vlookup
