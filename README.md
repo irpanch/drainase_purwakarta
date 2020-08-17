@@ -90,3 +90,7 @@ misal untuk pembahasan uji outlier, apakah bisa dengan jumlah sampel hujan maksi
 
 11. continous tabel yang panjang.  
 cara agar tampilan tabel nilai Kn sama seperti di excel. baris pindah ke kolom supaya lebih mudah terlihat.
+
+12. set global option untuk jumlah desimal angka.  
+untuk saat ini setiap angka yang keluar perlu di tambahkan `round(variable, digit=2)`.  
+Tapi masa tiap variabel perlu dikasih itu? pasti ada cara cerdas, hanya belum ketemu. 
