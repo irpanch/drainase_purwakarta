@@ -4,7 +4,16 @@ header-includes:
   \usepackage{amsmath}
   \usepackage{pdflscape}
   \usepackage{enumitem}
+  
 ---
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+        {-2.5ex\@plus -1ex \@minus -.25ex}%
+        {1.25ex \@plus .25ex}%
+        {\normalfont\normalsize\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{4}
 
 ```{r set-awal,echo=FALSE,include=TRUE,message=FALSE}
 
@@ -351,7 +360,7 @@ Karena ketersediaan data dengan rentang panjang yang berada di lokasi hanyalah d
 
 Analisa curah hujan maksimum rencana di sub DAS Lokasi pekerjaan dilakukan dengan metoda statistik. Sebararan teoritis yang digunakan dalam analisis frekuensi dari berbagai distribusi, yaitu sebaran teoritis distribusi Normal, Log-Normal 2 parameter, Log-Pearson tipe III, dan Gumbel. Berikut ini diuraikan formula untuk menentukan kedalaman hujan periode ulang tertentu untuk setiap distribusi frekuensi hujan.
 
-#### Distribusi Normal\\
+#### Distribusi Normal
 
 Distribusi normal adalah simetris terhadap sumbu vertikal dan berbentuk lonceng yang juga disebut distribusi Gauss. Distribusi normal mempunyai dua parameter yaitu rata-rata $\mu$ dan deviasi standar $\sigma$ dari populasi. Dalam praktek, nilai rata-rata $\bar{X}$ dan deviasi standar $\text{s}$ diturunkan dari data sampel untuk menggantikan $\mu$ dan $\sigma$. Persamaan distribusi normal adalah sebagai berikut:
 
