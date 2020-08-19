@@ -5,6 +5,8 @@ Percobaan pertama integrasi pembuatan laporan proyek dengan menggunakan RMarkdow
 ## Perlu dipelajari.
 1. Package caption dari LaTeX.  
    Untuk bisa mengatur spasi, posisi, ukuran huruf, dan sebagainya. Saat ini (28 Juli 2020), posisi caption masih acak-acakan. Belum Center, tulisan terlalu besar. Tulisan caption yang bagus ada [disini](http://www.peteryu.ca/tutorials/publishing/latex_captions). 
+   
+2. Untuk mempermudah membuat rumus \Latex, bisa ke website [ini](https://math-on-quora.surge.sh/). Sedangkan simbol di \Latex dapat dilihat pada website [ini](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols) 
 
 ## Kendala dan Solusi
 1. Tidak bisa insert gambar di cover?  
