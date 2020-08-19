@@ -351,11 +351,26 @@ Karena ketersediaan data dengan rentang panjang yang berada di lokasi hanyalah d
 
 Analisa curah hujan maksimum rencana di sub DAS Lokasi pekerjaan dilakukan dengan metoda statistik. Sebararan teoritis yang digunakan dalam analisis frekuensi dari berbagai distribusi, yaitu sebaran teoritis distribusi Normal, Log-Normal 2 parameter, Log-Pearson tipe III, dan Gumbel. Berikut ini diuraikan formula untuk menentukan kedalaman hujan periode ulang tertentu untuk setiap distribusi frekuensi hujan.
 
-#### Distribusi Normal
+#### Distribusi Normal\\
 
-Distribusi normal adalah simetris terhadap sumbu vertikal dan berbentuk lonceng yang juga disebut distribusi Gauss. Distribusi normal mempunyai dua parameter yaitu rata-rata µ dan deviasi standar *symbol* dari populasi. Dalam praktek, nilai rata-rata *symbol* dan deviasi standar *symbol* diturunkan dari data sampel untuk menggantikan *symbol* dan *symbol*. Persamaan distribusi normal adalah sebagai berikut:
+Distribusi normal adalah simetris terhadap sumbu vertikal dan berbentuk lonceng yang juga disebut distribusi Gauss. Distribusi normal mempunyai dua parameter yaitu rata-rata $\mu$ dan deviasi standar $\sigma$ dari populasi. Dalam praktek, nilai rata-rata $\bar{X}$ dan deviasi standar $\text{s}$ diturunkan dari data sampel untuk menggantikan $\mu$ dan $\sigma$. Persamaan distribusi normal adalah sebagai berikut:
 
-**insert Rumus**
+\begin{align}
+X_T &= \bar{X}+S.K \\
+\bar{X} &=\left( \dfrac{1}{n} \right)\sum_{i=1}^n x_i \\
+S &= \sqrt{\dfrac{\sum_{i=1}^n (X_i-\bar{X})^2}{n-1}}
+\end{align}
+
+dimana:
+\begin{itemize}[leftmargin=2.0cm, labelsep=0.5cm]
+\item[$X_T$ =] Kedalaman hujan untuk periode ulang T tahun (mm).
+\item[T =] Periode ulang (tahun).
+\item[$\bar{X}$ =] Kedalaman hujan rata-rata (mm).
+\item[n =] jumlah data.
+\item[S =] Standar deviasi (mm).
+\item[K =] Faktor dari Tabel Z distribusi normal. Lihat \textbf{Tabel 3 5.}
+\end{itemize}
+
 
 **Tabel 3 5 Tabel Z Distribusi Normal. Masuk lampiran aja kayanya**
 
