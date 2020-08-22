@@ -377,7 +377,7 @@ dimana:
 \item[$\bar{X}$ =] Kedalaman hujan rata-rata (mm).
 \item[n =] jumlah data.
 \item[S =] Standar deviasi (mm).
-\item[K =] Faktor dari Tabel Z distribusi normal. Lihat \textbf{Tabel 3 5.}
+\item[K =] Faktor dari Tabel Z distribusi normal. Lihat Lampiran A.1.
 \end{itemize}
 
 
