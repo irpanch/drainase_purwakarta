@@ -24,9 +24,30 @@ names(Tabel_Distribusi_Frekuensi)[9] <- 0.07
 opts <- options(knitr.kable.NA="")
 
 
-kable(Tabel_Distribusi_Frekuensi,"latex", longtable=T, booktabs=TRUE, linesep="", caption="Z-Score.\\label{hujan-max}") %>% kable_styling(latex_options=c("HOLD_position","repeat_header"),font_size=10,repeat_header_text = "\\textit{(lanjutan)}")
+kable(Tabel_Distribusi_Frekuensi,"latex", longtable=T, booktabs=TRUE, linesep="", caption="Z-Score.\\label{tabel_z}") %>% kable_styling(full_width=T,latex_options=c("HOLD_position","repeat_header"),font_size=10,repeat_header_text = "\\textit{(lanjutan)}") %>% 
+  footnote(general_title = "Sumber:",title_format=c("italic"),general = "Triatmodjo, B, Hidrologi Terapan, Tabel 7.4 Hal 220, 2008.",footnote_as_chunk = T)
 
 ```
+
+\newpage
+
+```{r tabel_lp_iii, echo=FALSE, message=FALSE, include=TRUE}
+
+library(dplyr)
+library(kableExtra)
+library(readxl)
+
+Tabel_lp_III <- read_excel("data_and_code/Tabel_Distribusi_Frekuensi.xlsx", 
+    sheet = "lp_III")
+
+opts <- options(knitr.kable.NA="")
+
+
+kable(Tabel_lp_III,"latex", longtable=T, booktabs=TRUE, linesep="", caption="Nilai G Untuk distribusi Log-Pearson III.\\label{tabel_lp_iii}") %>% kable_styling(full_width=T,latex_options=c("HOLD_position","repeat_header"),font_size=10,repeat_header_text = "\\textit{(lanjutan)}") %>% 
+  footnote(general = "Dikutip dari DR. M.M.A SHANIN, Statistical Analysis in Hydrology.",symbol="Cw = Weighted Skew Coefficient ",general_title = "Sumber:",symbol_title="Keterangan:",title_format=c("italic"),footnote_as_chunk = T)
+
+```
+
 
 \end{landscape}
 
