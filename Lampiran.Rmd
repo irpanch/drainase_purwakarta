@@ -5,10 +5,30 @@ output: pdf_document
 \appendix
 \section{Lampiran}
 
-\subsection{Appendix stuff}
+\begin{landscape}
 
-Relabelling the appendix can be a bit tricky. Here I used the standard \LaTeX syntax '\\appendix', and using LaTeX labels for sections instead of R Markdown syntax (i.e. using '\\section' and '\\subsection' instead of '#' and '##'). This automatically produces labels 'A.1', 'A.2', etc. I came up with doing it this way during the last two days before handing in my thesis, so I'm sure this is not the most elegant way of dealing with the appendices, but it works.
+\subsection{Tabel Distribusi Frekuensi}
 
+```{r tabel_z, echo=FALSE, message=FALSE, include=TRUE}
+
+library(dplyr)
+library(kableExtra)
+library(readxl)
+
+
+Tabel_Distribusi_Frekuensi <- read_excel("data_and_code/Tabel_Distribusi_Frekuensi.xlsx", 
+    sheet = "Tabel_Z", skip = 2)
+
+names(Tabel_Distribusi_Frekuensi)[9] <- 0.07 
+
+opts <- options(knitr.kable.NA="")
+
+
+kable(Tabel_Distribusi_Frekuensi,"latex", longtable=T, booktabs=TRUE, linesep="", caption="Z-Score.\\label{hujan-max}") %>% kable_styling(latex_options=c("HOLD_position","repeat_header"),font_size=10,repeat_header_text = "\\textit{(lanjutan)}")
+
+```
+
+\end{landscape}
 
 \subsection{Code example}
 
