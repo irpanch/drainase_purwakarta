@@ -308,7 +308,7 @@ opts <- options(knitr.kable.NA="")
 
 kable(Uji_Outlier[1:21,], "latex", escape=FALSE, booktabs=TRUE, linesep="", caption="Nilai Kn Outlier Berdasarakan Jumlah Sampel \\label{tbl_kn_outlier}") %>%
     kable_styling(latex_options=c("HOLD_position"),font_size = 8) %>% 
-  footnote(general_title = "Sumber:",title_format=c("italic"),general = "Ven Te Chow, 1988")
+  footnote(general_title = "Sumber:",title_format=c("italic"),general = "Ven Te Chow, 1988",footnote_as_chunk = T)
 
 
 ```
@@ -364,9 +364,13 @@ Analisa curah hujan maksimum rencana di sub DAS Lokasi pekerjaan dilakukan denga
 
 Distribusi normal adalah simetris terhadap sumbu vertikal dan berbentuk lonceng yang juga disebut distribusi Gauss. Distribusi normal mempunyai dua parameter yaitu rata-rata $\mu$ dan deviasi standar $\sigma$ dari populasi. Dalam praktek, nilai rata-rata $\bar{X}$ dan deviasi standar $\text{s}$ diturunkan dari data sampel untuk menggantikan $\mu$ dan $\sigma$. Persamaan distribusi normal adalah sebagai berikut:
 
+
 \begin{align}
+\label{eq:xt}
 X_T &= \bar{X}+S.K \\
+\label{eq:xbar}
 \bar{X} &=\left( \dfrac{1}{n} \right)\sum_{i=1}^n x_i \\
+\label{eq:sd}
 S &= \sqrt{\dfrac{\sum_{i=1}^n (X_i-\bar{X})^2}{n-1}}
 \end{align}
 
@@ -380,8 +384,7 @@ dimana:
 \item[K =] Faktor dari Tabel Z distribusi normal. Lihat Lampiran A.1.
 \end{itemize}
 
-
-**Tabel 3 5 Tabel Z Distribusi Normal. Masuk lampiran aja kayanya**
+Dengan menggunakan persamaan \ref{eq:xt} hingga persamaan \ref{eq:sd} maka nilai curah hujan rencana dengan distribusi normal adalah sebagai berikut.
 
 **Tabel 3 6  Perhitungan Distribusi Frekuensi Hujan Distribusi Normal**
 
