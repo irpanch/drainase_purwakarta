@@ -27,7 +27,7 @@ header-includes:
 
 ---
 nocite: | 
-  @Example1999, @Example2000
+  @SNI2415-2016, @ponce
 ...
 
 ```{r global_options, include=FALSE}
