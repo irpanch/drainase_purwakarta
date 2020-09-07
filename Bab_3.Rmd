@@ -312,6 +312,7 @@ kable(Uji_Outlier[1:21,], "latex", escape=FALSE, booktabs=TRUE, linesep="", capt
 
 
 ```
+
 ```{r, echo=FALSE, message=FALSE}
 
 # hitung hasil uji outlier
@@ -392,6 +393,17 @@ Dengan menggunakan persamaan \ref{eq:xt} hingga persamaan \ref{eq:sd} maka nilai
 
 
 #### Distribusi Log Normal
+
+Untuk frekuensi hujan yang mengikuti distribusi Log-normal, kedalaman hujan periode ulang T dapat ditentukan sebagai berikut:
+
+\begin{align}
+\label{eq:xt-ln}
+LnX_T &= \bar{LnX}+S_Lnxi.K_T \\
+\label{eq:xbar-ln}
+\bar{X} &=\left( \dfrac{1}{n} \right)\sum_{i=1}^n LnX_i \\
+\label{eq:sd-ln}
+S_LnXi &= \sqrt{\dfrac{\sum_{i=1}^n (LnX_i-\bar{LnX})^2}{n-1}}
+\end{align}
 
 #### Distribusi Log Pearson III
 
