@@ -398,16 +398,34 @@ Untuk frekuensi hujan yang mengikuti distribusi Log-normal, kedalaman hujan peri
 
 \begin{align}
 \label{eq:xt-ln}
-LnX_T &= \bar{LnX}+S_Lnxi.K_T \\
+LnX_T &= \overline{LnX}+S_{LnXi}.K_T \\
 \label{eq:xbar-ln}
 \bar{X} &=\left( \dfrac{1}{n} \right)\sum_{i=1}^n LnX_i \\
 \label{eq:sd-ln}
-S_LnXi &= \sqrt{\dfrac{\sum_{i=1}^n (LnX_i-\bar{LnX})^2}{n-1}}
+S_{LnXi} &= \sqrt{\dfrac{\sum_{i=1}^n (LnX_i-\overline{LnX})^2}{n-1}}
 \end{align}
+
+dimana:
+\begin{itemize}[leftmargin=2.0cm, labelsep=0.5cm]
+\item[$LnX_T$ =] Log kedalaman hujan untuk periode ulang T tahun (mm).
+\item[T =] Periode ulang (tahun).
+\item[$\overline{LnX}$ =] Log Kedalaman hujan rata-rata (mm).
+\item[n =] jumlah data.
+\item[$S_{LnXi}$=] Standar deviasi log $X_i$ (mm).
+\item[KT =] Faktor dari Tabel Z distribusi normal. Lihat Lampiran A.1.
+\end{itemize}
 
 #### Distribusi Log Pearson III
 
+Jika distribusi frekuensi hujan mengikuti distribusi Log-Pearson Tipe III, maka kedalaman hujan periode ulang T dapat ditentukan sebagai berikut:
+
+**Persamaan Log Pearson III**
+
 #### Distribusi Gumbel
+
+Jika distribusi frekuensi hujan mengikuti distribusi Gumbel, maka kedalaman hujan periode ulang T dapat ditentukan sebagai berikut:
+
+**Persamaan Gumbel**
 
 
 **Tabel 3 17 Curah Hujan Maximum Rencana**
