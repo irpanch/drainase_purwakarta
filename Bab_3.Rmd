@@ -400,7 +400,7 @@ Untuk frekuensi hujan yang mengikuti distribusi Log-normal, kedalaman hujan peri
 \label{eq:xt-ln}
 LnX_T &= \overline{LnX}+S_{LnXi}.K_T \\
 \label{eq:xbar-ln}
-\bar{X} &=\left( \dfrac{1}{n} \right)\sum_{i=1}^n LnX_i \\
+\overline{LnX} &=\left( \dfrac{1}{n} \right)\sum_{i=1}^n LnX_i \\
 \label{eq:sd-ln}
 S_{LnXi} &= \sqrt{\dfrac{\sum_{i=1}^n (LnX_i-\overline{LnX})^2}{n-1}}
 \end{align}
@@ -412,14 +412,37 @@ dimana:
 \item[$\overline{LnX}$ =] Log Kedalaman hujan rata-rata (mm).
 \item[n =] jumlah data.
 \item[$S_{LnXi}$=] Standar deviasi log $X_i$ (mm).
-\item[KT =] Faktor dari Tabel Z distribusi normal. Lihat Lampiran A.1.
+\item[KT =] Faktor dari Tabel Z distribusi normal. Lihat Lampiran Tabel A.2.
 \end{itemize}
 
 #### Distribusi Log Pearson III
 
 Jika distribusi frekuensi hujan mengikuti distribusi Log-Pearson Tipe III, maka kedalaman hujan periode ulang T dapat ditentukan sebagai berikut:
 
-**Persamaan Log Pearson III**
+\begin{align}
+\label{eq:xt-ln-p3}
+LnX_T &= \overline{LnX}+S_{LnXi}.G \\
+\label{eq:xbar-ln-p3}
+\overline{LnX} &=\left( \dfrac{1}{n} \right)\sum_{i=1}^n LnX_i \\
+\label{eq:sd-ln-p3}
+S_{LnX_i} &= \sqrt{\dfrac{\sum_{i=1}^n (LnX_i-\overline{LnX})^2}{n-1}} \\
+\label{eq:g-ln-p3}
+G &= f({C_s},T) \\
+\label{eq:cs-ln-p3}
+Cs &= \dfrac{\displaystyle n\sum_{i=1}^n (LnX_i - \overline {LnX})^3}{(n-1)(n-2){S_{LnXi}}^3}
+\end{align}
+
+dimana:
+\begin{itemize}[leftmargin=2.0cm, labelsep=0.5cm]
+\item[$LnX_T$ =] Log kedalaman hujan untuk periode ulang T tahun (mm).
+\item[T =] Periode ulang (tahun).
+\item[$\overline{LnX}$ =] Log Kedalaman hujan rata-rata (mm).
+\item[n =] jumlah data.
+\item[$S_{LnXi}$=] Standar deviasi log $X_i$ (mm).
+\item[G =] Faktor frekuensi. abel hubungan antara G dengan Cs serta T . Lihat Lampiran tabel A.3.
+\item[$C_S$ =] Koefisien kemencengan data Log $X_i$.
+\end{itemize}
+
 
 #### Distribusi Gumbel
 
