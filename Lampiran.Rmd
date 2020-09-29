@@ -48,6 +48,34 @@ kable(Tabel_lp_III,"latex", longtable=T, booktabs=TRUE, linesep="", caption="Nil
 
 ```
 
+\newpage
+
+```{r tabel_gumbel-yn, echo=FALSE, message=FALSE, include=TRUE }
+
+library(dplyr)
+library(kableExtra)
+library(readxl)
+
+Tabel_yn <- read_excel("data_and_code/Tabel_Distribusi_Frekuensi.xlsx", 
+    sheet = "yn")
+
+kable(Tabel_yn,"latex", longtable=T, booktabs=TRUE, linesep="", caption="\\textit{Reduced Mean} (Yn).\\label{tabel_yn}") %>% kable_styling(full_width=T,latex_options=c("HOLD_position","repeat_header"),font_size=9.5,repeat_header_text = "\\textit{(lanjutan)}") %>% 
+  footnote(general = "Triatmodjo, B, Hidrologi Terapan",general_title = "Sumber:",title_format=c("italic"),footnote_as_chunk = T)
+
+```
+```{r tabel_gumbel-sn, echo=FALSE, message=FALSE, include=TRUE }
+
+library(dplyr)
+library(kableExtra)
+library(readxl)
+
+Tabel_yn <- read_excel("data_and_code/Tabel_Distribusi_Frekuensi.xlsx", 
+    sheet = "sn")
+
+kable(Tabel_yn,"latex", longtable=T, booktabs=TRUE, linesep="", caption="\\textit{Reduced Standard Deviation} (Sn).\\label{tabel_sn}") %>% kable_styling(full_width=T,latex_options=c("HOLD_position","repeat_header"),font_size=9.5,repeat_header_text = "\\textit{(lanjutan)}") %>% 
+  footnote(general = "Triatmodjo, B, Hidrologi Terapan",general_title = "Sumber:",title_format=c("italic"),footnote_as_chunk = T)
+
+```
 
 \end{landscape}
 

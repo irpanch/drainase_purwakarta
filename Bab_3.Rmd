@@ -448,7 +448,29 @@ dimana:
 
 Jika distribusi frekuensi hujan mengikuti distribusi Gumbel, maka kedalaman hujan periode ulang T dapat ditentukan sebagai berikut:
 
-**Persamaan Gumbel**
+\begin{align}
+\label{eq:xt-gumbel}
+X_T &= \bar{X}+S.K \\
+\label{eq:xbar-gumbel}
+\bar{X} &=\left( \dfrac{1}{n} \right)\sum_{i=1}^n x_i \\
+\label{eq:sd-gumbel}
+S &= \sqrt{\dfrac{\sum_{i=1}^n (X_i-\bar{X})^2}{n-1}} \\
+K &=\frac{Y_T-Y_n}{S_n} \\
+Y_T &=\ -\ln\left\{-\ln\left(\frac{T-1}{T}\right)\right\}
+\end{align}
+
+dimana:
+\begin{itemize}[leftmargin=2.0cm, labelsep=0.5cm]
+\item[$X_T$ =] Kedalaman hujan untuk periode ulang T tahun (mm).
+\item[T =] Periode ulang (tahun).
+\item[$\bar{X}$ =] Kedalaman hujan rata-rata (mm).
+\item[n =] jumlah data.
+\item[S =] Standar deviasi (mm).
+\item[K =] Faktor frekuensi.
+\item[$Y_T$ =] \textit{Reduced variate}.
+\item[$Y_n$ =] \textit{Reduced mean} (sebagai fungsi dari banyaknya data n). Tabel hubungan antar $Y_n$ dengan jumlah data n, dapat dilihat pada Lampiran.
+\item[$S_n$ =] \textit{Reduced standar deviation} (sebagai fungsi dari banyaknya data n). Tabel hubungan antar $S_n$ dengan jumlah data n, dapat dilihat pada Lampiran.
+\end{itemize}
 
 
 **Tabel 3 17 Curah Hujan Maximum Rencana**
