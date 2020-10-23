@@ -177,7 +177,7 @@ print(matrixplot(mat, ColorRamp = "Precipitation",
 ```
 
 
-```{r hujan-harian-rata2, fig.cap="Hujan Harian Rata-Rata  \\label{hujan-harian-rata2}",echo=FALSE,message=FALSE}
+```{r hujan-harian-rata2, echo=FALSE, fig.cap="Hujan Harian Rata-Rata  \\label{hujan-harian-rata2}", message=FALSE, warning=FALSE}
 library(lubridate)
 
 
@@ -202,7 +202,7 @@ qplot(x=mean_data$DOY,y=mean_data$Hujan,
 
 ```
 
-```{r rata2-hujan-bulanan, include=TRUE, echo=FALSE, message=FALSE}
+```{r rata2-hujan-bulanan, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 library(reshape2)
 library(dplyr)
 library(kableExtra)
@@ -235,7 +235,7 @@ kable(data_pivot2, digits = 2,"latex", longtable=TRUE,booktabs=TRUE, linesep="",
 
 \newpage
 
-```{r hujan-max, echo=FALSE, message=FALSE, include=TRUE}
+```{r hujan-max, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 library(ggplot2)
 library(dplyr)
 library(lubridate)
@@ -483,6 +483,15 @@ Selanjutnya setelah dilakukan analisa frekuensi dilakukan uji kesesuaian distrib
 Uji kesesuaian distribusi frekuensi digunakan untuk menguji apakah pemilihan distribusi yang digunakan dalam perhitungan curah hujan rencana diterima atau ditolak, maka perlu dilakukan uji kesesuaian distribusi baik secara statistik maupun simpangan terkecil. Untuk pengujian statistik didasarkan pada SNI 2415-2016. Sedangkan untuk uji simpangan digunakan metode Smirnov Kolmogorof.
 
 #### Penentuan Jenis Distribusi Berdasarkan Statistik.
+Setiap jenis distribusi memiliki karakteristik nilai statistik yang berbeda. Untuk itu perlu dilakukan pengujian stastik terlebih dahulu terhadap data yang ada lalu kemudian dapat dipilih distribusi mana yang nantinya akan digunakan. Hasil uji statistik untuk data dapat dilihat pada Tabel 3 18 sedangkan tabel penentuan jenis distribusi dapat dilihat pada Tabel 3 19.
+
+```{r}
+library(gtsummary)
+data %>% select(Hujan) %>% tbl_summary(
+  statistic = list(all_continuous()~"{mean}({sd})")
+)
+```
+
 
 #### Uji Kolmogorov-Smirnov.
 
